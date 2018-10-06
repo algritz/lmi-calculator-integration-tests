@@ -1,5 +1,7 @@
 source 'https://rubygems.org'
 
+ruby '2.5.1'
+
 # Browser Automation
 gem 'watir', '6.14.0'
 gem 'watir-scroll', '0.4.0'

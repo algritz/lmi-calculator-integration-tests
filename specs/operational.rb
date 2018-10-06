@@ -15,7 +15,7 @@ describe 'Integration Tests' do
       end
     end
 
-    describe 'Assessing keys functional' do
+    describe 'Assessing Numeric keys functional' do
 
       it 'Pressing the "1" button should add the "1" value to the expression field' do
         flash_and_ensure_click(@browser.button(value: '1'))
@@ -58,6 +58,10 @@ describe 'Integration Tests' do
         expect(@browser.input.value.include? '0').to be true
       end
 
+    end
+
+    describe 'Assessing that Operation keys are functional' do
+
       it 'Pressing the "PLUS" button should add the "+" value to the expression field' do
         # This one was pesky, the + wouldn't be detected by WATIR for some reason
         flash_and_ensure_click(@browser.button(text: 'PLUS', class: 'operation'))
@@ -70,21 +74,26 @@ describe 'Integration Tests' do
       end
       it 'Pressing the "MULT" button should add the "x" value to the expression field' do
         flash_and_ensure_click(@browser.button(value: "×"))
-        expect(@browser.input.value.include? 'x').to be true
+        expect(@browser.input.value.include? "×").to be true
       end
       it 'Pressing the "DIV" button should add the "/" value to the expression field' do
         flash_and_ensure_click(@browser.button(value: '/'))
         expect(@browser.input.value.include? '/').to be true
       end
+    end
+
+    describe 'Assessing that DEL key is functional' do
       it 'Pressing the "DEL" button should remove the last character to the expression field' do
         flash_and_ensure_click(@browser.button(value: 'DEL'))
         expect(@browser.input.value.include? '/').to be false
       end
+    end
+    describe 'Assessing that EQ (=) key is functional' do
+
       it 'Pressing the "EQ" button should yield the value ERR to the output field' do
         flash_and_ensure_click(@browser.button(value: 'EQ'))
         expect(@browser.div(id: 'output').text.include? 'ERR').to be true
       end
     end
-
   end
 end
