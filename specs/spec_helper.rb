@@ -26,7 +26,7 @@ def flash_scroll_and_ensure_click(dom_element)
 end
 
 
-# this function was a "try" to clear the equation field between each tests,
+# this function was a "try" to clear the 'equation' field between each tests,
 # unfortunately, Watir sees the equation field "empty" after the first "press"
 # of the DEL button, which yields invalid scenarios afterwards.
 # You can uncomment the call to this function in file functional.rb

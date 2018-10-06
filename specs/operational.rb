@@ -69,11 +69,11 @@ describe 'Integration Tests' do
       end
 
       it 'Pressing the "MINUS" button should add the "-" value to the expression field' do
-        flash_and_ensure_click(@browser.button(value: '-'))
+        flash_and_ensure_click(@browser.button(text: 'MINUS', class: 'operation'))
         expect(@browser.input.value.include? '-').to be true
       end
       it 'Pressing the "MULT" button should add the "x" value to the expression field' do
-        flash_and_ensure_click(@browser.button(value: "×"))
+        flash_and_ensure_click(@browser.button(text: 'MULT', class: 'operation'))
         expect(@browser.input.value.include? "×").to be true
       end
       it 'Pressing the "DIV" button should add the "/" value to the expression field' do
