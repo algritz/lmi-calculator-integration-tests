@@ -293,63 +293,1076 @@ a {
   <dl style="margin-left: 30px;">
   <dt id="example_group_3" class="passed">Accessing the Calculator</dt>
     <script type="text/javascript">moveProgressBar('5.8');</script>
-    <dd class="example passed"><span class="passed_spec_name">Should open the web page of the calculator</span><span class='duration'>1.05094s</span></dd>
+    <dd class="example passed"><span class="passed_spec_name">Should open the web page of the calculator</span><span class='duration'>0.96367s</span></dd>
   </dl>
 </div>
 <div id="div_group_4" class="example_group passed">
   <dl style="margin-left: 30px;">
   <dt id="example_group_4" class="passed">Assessing Numeric keys functional</dt>
     <script type="text/javascript">moveProgressBar('11.7');</script>
-    <dd class="example passed"><span class="passed_spec_name">Pressing the &quot;1&quot; button should add the &quot;1&quot; value to the expression field</span><span class='duration'>2.38710s</span></dd>
+    <dd class="example passed"><span class="passed_spec_name">Pressing &quot;1&quot; should add the &quot;1&quot; value to the expression field</span><span class='duration'>2.30000s</span></dd>
     <script type="text/javascript">moveProgressBar('17.6');</script>
-    <dd class="example passed"><span class="passed_spec_name">Pressing the &quot;2&quot; button should add the &quot;2&quot; value to the expression field</span><span class='duration'>2.29415s</span></dd>
+    <dd class="example passed"><span class="passed_spec_name">Pressing &quot;2&quot; should add the &quot;2&quot; value to the expression field</span><span class='duration'>2.38584s</span></dd>
+    <script type="text/javascript">makeRed('rspec-header');</script>
+    <script type="text/javascript">makeRed('div_group_4');</script>
+    <script type="text/javascript">makeRed('example_group_4');</script>
     <script type="text/javascript">moveProgressBar('23.5');</script>
-    <dd class="example passed"><span class="passed_spec_name">Pressing the &quot;3&quot; button should add the &quot;3&quot; value to the expression field</span><span class='duration'>2.30182s</span></dd>
+    <dd class="example failed">
+      <span class="failed_spec_name">Pressing &quot;3&quot; should add the &quot;3&quot; value to the expression field</span>
+      <span class="duration">1.23284s</span>
+      <div class="failure" id="failure_1">
+        <div class="message"><pre>  Failure/Error: flash_and_ensure_click(@browser.button(value: &#39;3&#39;))
+
+  Selenium::WebDriver::Error::WebDriverError:
+    chrome not reachable
+      (Session info: chrome=69.0.3497.100)
+      (Driver info: chromedriver=2.40.565386 (45a059dc425e08165f9a10324bd1380cc13ca363),platform=Mac OS X 10.13.6 x86_64)
+  # /Users/dcloutier/.rvm/gems/ruby-2.5.1/gems/selenium-webdriver-3.14.1/lib/selenium/webdriver/remote/response.rb:69:in `assert_ok&#39;
+  # /Users/dcloutier/.rvm/gems/ruby-2.5.1/gems/selenium-webdriver-3.14.1/lib/selenium/webdriver/remote/response.rb:32:in `initialize&#39;
+  # /Users/dcloutier/.rvm/gems/ruby-2.5.1/gems/selenium-webdriver-3.14.1/lib/selenium/webdriver/remote/http/common.rb:84:in `new&#39;
+  # /Users/dcloutier/.rvm/gems/ruby-2.5.1/gems/selenium-webdriver-3.14.1/lib/selenium/webdriver/remote/http/common.rb:84:in `create_response&#39;
+  # /Users/dcloutier/.rvm/gems/ruby-2.5.1/gems/selenium-webdriver-3.14.1/lib/selenium/webdriver/remote/http/default.rb:104:in `request&#39;
+  # /Users/dcloutier/.rvm/gems/ruby-2.5.1/gems/selenium-webdriver-3.14.1/lib/selenium/webdriver/remote/http/common.rb:62:in `call&#39;
+  # /Users/dcloutier/.rvm/gems/ruby-2.5.1/gems/selenium-webdriver-3.14.1/lib/selenium/webdriver/remote/bridge.rb:164:in `execute&#39;
+  # /Users/dcloutier/.rvm/gems/ruby-2.5.1/gems/selenium-webdriver-3.14.1/lib/selenium/webdriver/remote/oss/bridge.rb:584:in `execute&#39;
+  # /Users/dcloutier/.rvm/gems/ruby-2.5.1/gems/selenium-webdriver-3.14.1/lib/selenium/webdriver/remote/oss/bridge.rb:267:in `execute_script&#39;
+  # /Users/dcloutier/.rvm/gems/ruby-2.5.1/gems/selenium-webdriver-3.14.1/lib/selenium/webdriver/common/driver.rb:211:in `execute_script&#39;
+  # /Users/dcloutier/.rvm/gems/ruby-2.5.1/gems/watir-6.14.0/lib/watir/browser.rb:217:in `execute_script&#39;
+  # /Users/dcloutier/.rvm/gems/ruby-2.5.1/gems/watir-6.14.0/lib/watir/js_snippets.rb:13:in `execute_js&#39;
+  # /Users/dcloutier/.rvm/gems/ruby-2.5.1/gems/watir-6.14.0/lib/watir/js_execution.rb:64:in `block (2 levels) in flash&#39;
+  # /Users/dcloutier/.rvm/gems/ruby-2.5.1/gems/watir-6.14.0/lib/watir/elements/element.rb:758:in `element_call&#39;
+  # /Users/dcloutier/.rvm/gems/ruby-2.5.1/gems/watir-6.14.0/lib/watir/js_execution.rb:64:in `block in flash&#39;
+  # /Users/dcloutier/.rvm/gems/ruby-2.5.1/gems/watir-6.14.0/lib/watir/js_execution.rb:63:in `each&#39;
+  # /Users/dcloutier/.rvm/gems/ruby-2.5.1/gems/watir-6.14.0/lib/watir/js_execution.rb:63:in `flash&#39;
+  # ./specs/spec_helper.rb:15:in `flash_and_ensure_click&#39;
+  # ./specs/operational.rb:30:in `block (4 levels) in &lt;top (required)&gt;&#39;</pre></div>
+        <div class="backtrace"><pre>/Users/dcloutier/.rvm/gems/ruby-2.5.1/gems/selenium-webdriver-3.14.1/lib/selenium/webdriver/remote/response.rb:69:in `assert_ok&#39;
+/Users/dcloutier/.rvm/gems/ruby-2.5.1/gems/selenium-webdriver-3.14.1/lib/selenium/webdriver/remote/response.rb:32:in `initialize&#39;
+/Users/dcloutier/.rvm/gems/ruby-2.5.1/gems/selenium-webdriver-3.14.1/lib/selenium/webdriver/remote/http/common.rb:84:in `new&#39;
+/Users/dcloutier/.rvm/gems/ruby-2.5.1/gems/selenium-webdriver-3.14.1/lib/selenium/webdriver/remote/http/common.rb:84:in `create_response&#39;
+/Users/dcloutier/.rvm/gems/ruby-2.5.1/gems/selenium-webdriver-3.14.1/lib/selenium/webdriver/remote/http/default.rb:104:in `request&#39;
+/Users/dcloutier/.rvm/gems/ruby-2.5.1/gems/selenium-webdriver-3.14.1/lib/selenium/webdriver/remote/http/common.rb:62:in `call&#39;
+/Users/dcloutier/.rvm/gems/ruby-2.5.1/gems/selenium-webdriver-3.14.1/lib/selenium/webdriver/remote/bridge.rb:164:in `execute&#39;
+/Users/dcloutier/.rvm/gems/ruby-2.5.1/gems/selenium-webdriver-3.14.1/lib/selenium/webdriver/remote/oss/bridge.rb:584:in `execute&#39;
+/Users/dcloutier/.rvm/gems/ruby-2.5.1/gems/selenium-webdriver-3.14.1/lib/selenium/webdriver/remote/oss/bridge.rb:267:in `execute_script&#39;
+/Users/dcloutier/.rvm/gems/ruby-2.5.1/gems/selenium-webdriver-3.14.1/lib/selenium/webdriver/common/driver.rb:211:in `execute_script&#39;
+/Users/dcloutier/.rvm/gems/ruby-2.5.1/gems/watir-6.14.0/lib/watir/browser.rb:217:in `execute_script&#39;
+/Users/dcloutier/.rvm/gems/ruby-2.5.1/gems/watir-6.14.0/lib/watir/js_snippets.rb:13:in `execute_js&#39;
+/Users/dcloutier/.rvm/gems/ruby-2.5.1/gems/watir-6.14.0/lib/watir/js_execution.rb:64:in `block (2 levels) in flash&#39;
+/Users/dcloutier/.rvm/gems/ruby-2.5.1/gems/watir-6.14.0/lib/watir/elements/element.rb:758:in `element_call&#39;
+/Users/dcloutier/.rvm/gems/ruby-2.5.1/gems/watir-6.14.0/lib/watir/js_execution.rb:64:in `block in flash&#39;
+/Users/dcloutier/.rvm/gems/ruby-2.5.1/gems/watir-6.14.0/lib/watir/js_execution.rb:63:in `each&#39;
+/Users/dcloutier/.rvm/gems/ruby-2.5.1/gems/watir-6.14.0/lib/watir/js_execution.rb:63:in `flash&#39;
+./specs/spec_helper.rb:15:in `flash_and_ensure_click&#39;
+./specs/operational.rb:30:in `block (4 levels) in &lt;top (required)&gt;&#39;</pre></div>
+    <pre class="ruby"><code><span class="linenum">67</span>
+<span class="linenum">68</span>        def assert_ok
+<span class="offending"><span class="linenum">69</span>          e = error</span>
+<span class="linenum">70</span>          raise e if e
+<span class="linenum">71</span>          return unless @code.nil? || @code >= 400
+<span class="linenum">72</span><span class="comment"># Install the coderay gem to get syntax highlighting</span></code></pre>
+      </div>
+    </dd>
     <script type="text/javascript">moveProgressBar('29.4');</script>
-    <dd class="example passed"><span class="passed_spec_name">Pressing the &quot;4&quot; button should add the &quot;4&quot; value to the expression field</span><span class='duration'>2.28125s</span></dd>
+    <dd class="example failed">
+      <span class="failed_spec_name">Pressing &quot;4&quot; should add the &quot;4&quot; value to the expression field</span>
+      <span class="duration">0.01498s</span>
+      <div class="failure" id="failure_2">
+        <div class="message"><pre>  Failure/Error: flash_and_ensure_click(@browser.button(value: &#39;4&#39;))
+
+  Selenium::WebDriver::Error::WebDriverError:
+    chrome not reachable
+      (Session info: chrome=69.0.3497.100)
+      (Driver info: chromedriver=2.40.565386 (45a059dc425e08165f9a10324bd1380cc13ca363),platform=Mac OS X 10.13.6 x86_64)
+  # /Users/dcloutier/.rvm/gems/ruby-2.5.1/gems/selenium-webdriver-3.14.1/lib/selenium/webdriver/remote/response.rb:69:in `assert_ok&#39;
+  # /Users/dcloutier/.rvm/gems/ruby-2.5.1/gems/selenium-webdriver-3.14.1/lib/selenium/webdriver/remote/response.rb:32:in `initialize&#39;
+  # /Users/dcloutier/.rvm/gems/ruby-2.5.1/gems/selenium-webdriver-3.14.1/lib/selenium/webdriver/remote/http/common.rb:84:in `new&#39;
+  # /Users/dcloutier/.rvm/gems/ruby-2.5.1/gems/selenium-webdriver-3.14.1/lib/selenium/webdriver/remote/http/common.rb:84:in `create_response&#39;
+  # /Users/dcloutier/.rvm/gems/ruby-2.5.1/gems/selenium-webdriver-3.14.1/lib/selenium/webdriver/remote/http/default.rb:104:in `request&#39;
+  # /Users/dcloutier/.rvm/gems/ruby-2.5.1/gems/selenium-webdriver-3.14.1/lib/selenium/webdriver/remote/http/common.rb:62:in `call&#39;
+  # /Users/dcloutier/.rvm/gems/ruby-2.5.1/gems/selenium-webdriver-3.14.1/lib/selenium/webdriver/remote/bridge.rb:164:in `execute&#39;
+  # /Users/dcloutier/.rvm/gems/ruby-2.5.1/gems/selenium-webdriver-3.14.1/lib/selenium/webdriver/remote/oss/bridge.rb:584:in `execute&#39;
+  # /Users/dcloutier/.rvm/gems/ruby-2.5.1/gems/selenium-webdriver-3.14.1/lib/selenium/webdriver/remote/oss/bridge.rb:552:in `find_element_by&#39;
+  # /Users/dcloutier/.rvm/gems/ruby-2.5.1/gems/selenium-webdriver-3.14.1/lib/selenium/webdriver/common/search_context.rb:60:in `find_element&#39;
+  # /Users/dcloutier/.rvm/gems/ruby-2.5.1/gems/watir-6.14.0/lib/watir/locators/element/locator.rb:286:in `locate_element&#39;
+  # /Users/dcloutier/.rvm/gems/ruby-2.5.1/gems/watir-6.14.0/lib/watir/locators/element/locator.rb:76:in `using_watir&#39;
+  # /Users/dcloutier/.rvm/gems/ruby-2.5.1/gems/watir-6.14.0/lib/watir/locators/element/locator.rb:35:in `locate&#39;
+  # /Users/dcloutier/.rvm/gems/ruby-2.5.1/gems/watir-6.14.0/lib/watir/elements/element.rb:693:in `locate_in_context&#39;
+  # /Users/dcloutier/.rvm/gems/ruby-2.5.1/gems/watir-6.14.0/lib/watir/elements/element.rb:583:in `locate&#39;
+  # /Users/dcloutier/.rvm/gems/ruby-2.5.1/gems/watir-6.14.0/lib/watir/elements/element.rb:680:in `assert_exists&#39;
+  # /Users/dcloutier/.rvm/gems/ruby-2.5.1/gems/watir-6.14.0/lib/watir/elements/element.rb:738:in `display_check&#39;
+  # /Users/dcloutier/.rvm/gems/ruby-2.5.1/gems/watir-6.14.0/lib/watir/elements/element.rb:481:in `present?&#39;
+  # /Users/dcloutier/.rvm/gems/ruby-2.5.1/gems/watir-6.14.0/lib/watir/wait.rb:43:in `block in until&#39;
+  # /Users/dcloutier/.rvm/gems/ruby-2.5.1/gems/watir-6.14.0/lib/watir/wait.rb:87:in `block in run_with_timer&#39;
+  # /Users/dcloutier/.rvm/gems/ruby-2.5.1/gems/watir-6.14.0/lib/watir/wait/timer.rb:19:in `block in wait&#39;
+  # /Users/dcloutier/.rvm/gems/ruby-2.5.1/gems/watir-6.14.0/lib/watir/wait/timer.rb:18:in `loop&#39;
+  # /Users/dcloutier/.rvm/gems/ruby-2.5.1/gems/watir-6.14.0/lib/watir/wait/timer.rb:18:in `wait&#39;
+  # /Users/dcloutier/.rvm/gems/ruby-2.5.1/gems/watir-6.14.0/lib/watir/wait.rb:86:in `run_with_timer&#39;
+  # /Users/dcloutier/.rvm/gems/ruby-2.5.1/gems/watir-6.14.0/lib/watir/wait.rb:42:in `until&#39;
+  # /Users/dcloutier/.rvm/gems/ruby-2.5.1/gems/watir-6.14.0/lib/watir/wait.rb:126:in `wait_until&#39;
+  # ./specs/spec_helper.rb:14:in `flash_and_ensure_click&#39;
+  # ./specs/operational.rb:34:in `block (4 levels) in &lt;top (required)&gt;&#39;</pre></div>
+        <div class="backtrace"><pre>/Users/dcloutier/.rvm/gems/ruby-2.5.1/gems/selenium-webdriver-3.14.1/lib/selenium/webdriver/remote/response.rb:69:in `assert_ok&#39;
+/Users/dcloutier/.rvm/gems/ruby-2.5.1/gems/selenium-webdriver-3.14.1/lib/selenium/webdriver/remote/response.rb:32:in `initialize&#39;
+/Users/dcloutier/.rvm/gems/ruby-2.5.1/gems/selenium-webdriver-3.14.1/lib/selenium/webdriver/remote/http/common.rb:84:in `new&#39;
+/Users/dcloutier/.rvm/gems/ruby-2.5.1/gems/selenium-webdriver-3.14.1/lib/selenium/webdriver/remote/http/common.rb:84:in `create_response&#39;
+/Users/dcloutier/.rvm/gems/ruby-2.5.1/gems/selenium-webdriver-3.14.1/lib/selenium/webdriver/remote/http/default.rb:104:in `request&#39;
+/Users/dcloutier/.rvm/gems/ruby-2.5.1/gems/selenium-webdriver-3.14.1/lib/selenium/webdriver/remote/http/common.rb:62:in `call&#39;
+/Users/dcloutier/.rvm/gems/ruby-2.5.1/gems/selenium-webdriver-3.14.1/lib/selenium/webdriver/remote/bridge.rb:164:in `execute&#39;
+/Users/dcloutier/.rvm/gems/ruby-2.5.1/gems/selenium-webdriver-3.14.1/lib/selenium/webdriver/remote/oss/bridge.rb:584:in `execute&#39;
+/Users/dcloutier/.rvm/gems/ruby-2.5.1/gems/selenium-webdriver-3.14.1/lib/selenium/webdriver/remote/oss/bridge.rb:552:in `find_element_by&#39;
+/Users/dcloutier/.rvm/gems/ruby-2.5.1/gems/selenium-webdriver-3.14.1/lib/selenium/webdriver/common/search_context.rb:60:in `find_element&#39;
+/Users/dcloutier/.rvm/gems/ruby-2.5.1/gems/watir-6.14.0/lib/watir/locators/element/locator.rb:286:in `locate_element&#39;
+/Users/dcloutier/.rvm/gems/ruby-2.5.1/gems/watir-6.14.0/lib/watir/locators/element/locator.rb:76:in `using_watir&#39;
+/Users/dcloutier/.rvm/gems/ruby-2.5.1/gems/watir-6.14.0/lib/watir/locators/element/locator.rb:35:in `locate&#39;
+/Users/dcloutier/.rvm/gems/ruby-2.5.1/gems/watir-6.14.0/lib/watir/elements/element.rb:693:in `locate_in_context&#39;
+/Users/dcloutier/.rvm/gems/ruby-2.5.1/gems/watir-6.14.0/lib/watir/elements/element.rb:583:in `locate&#39;
+/Users/dcloutier/.rvm/gems/ruby-2.5.1/gems/watir-6.14.0/lib/watir/elements/element.rb:680:in `assert_exists&#39;
+/Users/dcloutier/.rvm/gems/ruby-2.5.1/gems/watir-6.14.0/lib/watir/elements/element.rb:738:in `display_check&#39;
+/Users/dcloutier/.rvm/gems/ruby-2.5.1/gems/watir-6.14.0/lib/watir/elements/element.rb:481:in `present?&#39;
+/Users/dcloutier/.rvm/gems/ruby-2.5.1/gems/watir-6.14.0/lib/watir/wait.rb:43:in `block in until&#39;
+/Users/dcloutier/.rvm/gems/ruby-2.5.1/gems/watir-6.14.0/lib/watir/wait.rb:87:in `block in run_with_timer&#39;
+/Users/dcloutier/.rvm/gems/ruby-2.5.1/gems/watir-6.14.0/lib/watir/wait/timer.rb:19:in `block in wait&#39;
+/Users/dcloutier/.rvm/gems/ruby-2.5.1/gems/watir-6.14.0/lib/watir/wait/timer.rb:18:in `loop&#39;
+/Users/dcloutier/.rvm/gems/ruby-2.5.1/gems/watir-6.14.0/lib/watir/wait/timer.rb:18:in `wait&#39;
+/Users/dcloutier/.rvm/gems/ruby-2.5.1/gems/watir-6.14.0/lib/watir/wait.rb:86:in `run_with_timer&#39;
+/Users/dcloutier/.rvm/gems/ruby-2.5.1/gems/watir-6.14.0/lib/watir/wait.rb:42:in `until&#39;
+/Users/dcloutier/.rvm/gems/ruby-2.5.1/gems/watir-6.14.0/lib/watir/wait.rb:126:in `wait_until&#39;
+./specs/spec_helper.rb:14:in `flash_and_ensure_click&#39;
+./specs/operational.rb:34:in `block (4 levels) in &lt;top (required)&gt;&#39;</pre></div>
+    <pre class="ruby"><code><span class="linenum">67</span>
+<span class="linenum">68</span>        def assert_ok
+<span class="offending"><span class="linenum">69</span>          e = error</span>
+<span class="linenum">70</span>          raise e if e
+<span class="linenum">71</span>          return unless @code.nil? || @code >= 400
+<span class="linenum">72</span><span class="comment"># Install the coderay gem to get syntax highlighting</span></code></pre>
+      </div>
+    </dd>
     <script type="text/javascript">moveProgressBar('35.2');</script>
-    <dd class="example passed"><span class="passed_spec_name">Pressing the &quot;5&quot; button should add the &quot;5&quot; value to the expression field</span><span class='duration'>2.29841s</span></dd>
+    <dd class="example failed">
+      <span class="failed_spec_name">Pressing &quot;5&quot; should add the &quot;5&quot; value to the expression field</span>
+      <span class="duration">0.00358s</span>
+      <div class="failure" id="failure_3">
+        <div class="message"><pre>  Failure/Error: flash_and_ensure_click(@browser.button(value: &#39;5&#39;))
+
+  Selenium::WebDriver::Error::WebDriverError:
+    chrome not reachable
+      (Session info: chrome=69.0.3497.100)
+      (Driver info: chromedriver=2.40.565386 (45a059dc425e08165f9a10324bd1380cc13ca363),platform=Mac OS X 10.13.6 x86_64)
+  # /Users/dcloutier/.rvm/gems/ruby-2.5.1/gems/selenium-webdriver-3.14.1/lib/selenium/webdriver/remote/response.rb:69:in `assert_ok&#39;
+  # /Users/dcloutier/.rvm/gems/ruby-2.5.1/gems/selenium-webdriver-3.14.1/lib/selenium/webdriver/remote/response.rb:32:in `initialize&#39;
+  # /Users/dcloutier/.rvm/gems/ruby-2.5.1/gems/selenium-webdriver-3.14.1/lib/selenium/webdriver/remote/http/common.rb:84:in `new&#39;
+  # /Users/dcloutier/.rvm/gems/ruby-2.5.1/gems/selenium-webdriver-3.14.1/lib/selenium/webdriver/remote/http/common.rb:84:in `create_response&#39;
+  # /Users/dcloutier/.rvm/gems/ruby-2.5.1/gems/selenium-webdriver-3.14.1/lib/selenium/webdriver/remote/http/default.rb:104:in `request&#39;
+  # /Users/dcloutier/.rvm/gems/ruby-2.5.1/gems/selenium-webdriver-3.14.1/lib/selenium/webdriver/remote/http/common.rb:62:in `call&#39;
+  # /Users/dcloutier/.rvm/gems/ruby-2.5.1/gems/selenium-webdriver-3.14.1/lib/selenium/webdriver/remote/bridge.rb:164:in `execute&#39;
+  # /Users/dcloutier/.rvm/gems/ruby-2.5.1/gems/selenium-webdriver-3.14.1/lib/selenium/webdriver/remote/oss/bridge.rb:584:in `execute&#39;
+  # /Users/dcloutier/.rvm/gems/ruby-2.5.1/gems/selenium-webdriver-3.14.1/lib/selenium/webdriver/remote/oss/bridge.rb:552:in `find_element_by&#39;
+  # /Users/dcloutier/.rvm/gems/ruby-2.5.1/gems/selenium-webdriver-3.14.1/lib/selenium/webdriver/common/search_context.rb:60:in `find_element&#39;
+  # /Users/dcloutier/.rvm/gems/ruby-2.5.1/gems/watir-6.14.0/lib/watir/locators/element/locator.rb:286:in `locate_element&#39;
+  # /Users/dcloutier/.rvm/gems/ruby-2.5.1/gems/watir-6.14.0/lib/watir/locators/element/locator.rb:76:in `using_watir&#39;
+  # /Users/dcloutier/.rvm/gems/ruby-2.5.1/gems/watir-6.14.0/lib/watir/locators/element/locator.rb:35:in `locate&#39;
+  # /Users/dcloutier/.rvm/gems/ruby-2.5.1/gems/watir-6.14.0/lib/watir/elements/element.rb:693:in `locate_in_context&#39;
+  # /Users/dcloutier/.rvm/gems/ruby-2.5.1/gems/watir-6.14.0/lib/watir/elements/element.rb:583:in `locate&#39;
+  # /Users/dcloutier/.rvm/gems/ruby-2.5.1/gems/watir-6.14.0/lib/watir/elements/element.rb:680:in `assert_exists&#39;
+  # /Users/dcloutier/.rvm/gems/ruby-2.5.1/gems/watir-6.14.0/lib/watir/elements/element.rb:738:in `display_check&#39;
+  # /Users/dcloutier/.rvm/gems/ruby-2.5.1/gems/watir-6.14.0/lib/watir/elements/element.rb:481:in `present?&#39;
+  # /Users/dcloutier/.rvm/gems/ruby-2.5.1/gems/watir-6.14.0/lib/watir/wait.rb:43:in `block in until&#39;
+  # /Users/dcloutier/.rvm/gems/ruby-2.5.1/gems/watir-6.14.0/lib/watir/wait.rb:87:in `block in run_with_timer&#39;
+  # /Users/dcloutier/.rvm/gems/ruby-2.5.1/gems/watir-6.14.0/lib/watir/wait/timer.rb:19:in `block in wait&#39;
+  # /Users/dcloutier/.rvm/gems/ruby-2.5.1/gems/watir-6.14.0/lib/watir/wait/timer.rb:18:in `loop&#39;
+  # /Users/dcloutier/.rvm/gems/ruby-2.5.1/gems/watir-6.14.0/lib/watir/wait/timer.rb:18:in `wait&#39;
+  # /Users/dcloutier/.rvm/gems/ruby-2.5.1/gems/watir-6.14.0/lib/watir/wait.rb:86:in `run_with_timer&#39;
+  # /Users/dcloutier/.rvm/gems/ruby-2.5.1/gems/watir-6.14.0/lib/watir/wait.rb:42:in `until&#39;
+  # /Users/dcloutier/.rvm/gems/ruby-2.5.1/gems/watir-6.14.0/lib/watir/wait.rb:126:in `wait_until&#39;
+  # ./specs/spec_helper.rb:14:in `flash_and_ensure_click&#39;
+  # ./specs/operational.rb:38:in `block (4 levels) in &lt;top (required)&gt;&#39;</pre></div>
+        <div class="backtrace"><pre>/Users/dcloutier/.rvm/gems/ruby-2.5.1/gems/selenium-webdriver-3.14.1/lib/selenium/webdriver/remote/response.rb:69:in `assert_ok&#39;
+/Users/dcloutier/.rvm/gems/ruby-2.5.1/gems/selenium-webdriver-3.14.1/lib/selenium/webdriver/remote/response.rb:32:in `initialize&#39;
+/Users/dcloutier/.rvm/gems/ruby-2.5.1/gems/selenium-webdriver-3.14.1/lib/selenium/webdriver/remote/http/common.rb:84:in `new&#39;
+/Users/dcloutier/.rvm/gems/ruby-2.5.1/gems/selenium-webdriver-3.14.1/lib/selenium/webdriver/remote/http/common.rb:84:in `create_response&#39;
+/Users/dcloutier/.rvm/gems/ruby-2.5.1/gems/selenium-webdriver-3.14.1/lib/selenium/webdriver/remote/http/default.rb:104:in `request&#39;
+/Users/dcloutier/.rvm/gems/ruby-2.5.1/gems/selenium-webdriver-3.14.1/lib/selenium/webdriver/remote/http/common.rb:62:in `call&#39;
+/Users/dcloutier/.rvm/gems/ruby-2.5.1/gems/selenium-webdriver-3.14.1/lib/selenium/webdriver/remote/bridge.rb:164:in `execute&#39;
+/Users/dcloutier/.rvm/gems/ruby-2.5.1/gems/selenium-webdriver-3.14.1/lib/selenium/webdriver/remote/oss/bridge.rb:584:in `execute&#39;
+/Users/dcloutier/.rvm/gems/ruby-2.5.1/gems/selenium-webdriver-3.14.1/lib/selenium/webdriver/remote/oss/bridge.rb:552:in `find_element_by&#39;
+/Users/dcloutier/.rvm/gems/ruby-2.5.1/gems/selenium-webdriver-3.14.1/lib/selenium/webdriver/common/search_context.rb:60:in `find_element&#39;
+/Users/dcloutier/.rvm/gems/ruby-2.5.1/gems/watir-6.14.0/lib/watir/locators/element/locator.rb:286:in `locate_element&#39;
+/Users/dcloutier/.rvm/gems/ruby-2.5.1/gems/watir-6.14.0/lib/watir/locators/element/locator.rb:76:in `using_watir&#39;
+/Users/dcloutier/.rvm/gems/ruby-2.5.1/gems/watir-6.14.0/lib/watir/locators/element/locator.rb:35:in `locate&#39;
+/Users/dcloutier/.rvm/gems/ruby-2.5.1/gems/watir-6.14.0/lib/watir/elements/element.rb:693:in `locate_in_context&#39;
+/Users/dcloutier/.rvm/gems/ruby-2.5.1/gems/watir-6.14.0/lib/watir/elements/element.rb:583:in `locate&#39;
+/Users/dcloutier/.rvm/gems/ruby-2.5.1/gems/watir-6.14.0/lib/watir/elements/element.rb:680:in `assert_exists&#39;
+/Users/dcloutier/.rvm/gems/ruby-2.5.1/gems/watir-6.14.0/lib/watir/elements/element.rb:738:in `display_check&#39;
+/Users/dcloutier/.rvm/gems/ruby-2.5.1/gems/watir-6.14.0/lib/watir/elements/element.rb:481:in `present?&#39;
+/Users/dcloutier/.rvm/gems/ruby-2.5.1/gems/watir-6.14.0/lib/watir/wait.rb:43:in `block in until&#39;
+/Users/dcloutier/.rvm/gems/ruby-2.5.1/gems/watir-6.14.0/lib/watir/wait.rb:87:in `block in run_with_timer&#39;
+/Users/dcloutier/.rvm/gems/ruby-2.5.1/gems/watir-6.14.0/lib/watir/wait/timer.rb:19:in `block in wait&#39;
+/Users/dcloutier/.rvm/gems/ruby-2.5.1/gems/watir-6.14.0/lib/watir/wait/timer.rb:18:in `loop&#39;
+/Users/dcloutier/.rvm/gems/ruby-2.5.1/gems/watir-6.14.0/lib/watir/wait/timer.rb:18:in `wait&#39;
+/Users/dcloutier/.rvm/gems/ruby-2.5.1/gems/watir-6.14.0/lib/watir/wait.rb:86:in `run_with_timer&#39;
+/Users/dcloutier/.rvm/gems/ruby-2.5.1/gems/watir-6.14.0/lib/watir/wait.rb:42:in `until&#39;
+/Users/dcloutier/.rvm/gems/ruby-2.5.1/gems/watir-6.14.0/lib/watir/wait.rb:126:in `wait_until&#39;
+./specs/spec_helper.rb:14:in `flash_and_ensure_click&#39;
+./specs/operational.rb:38:in `block (4 levels) in &lt;top (required)&gt;&#39;</pre></div>
+    <pre class="ruby"><code><span class="linenum">67</span>
+<span class="linenum">68</span>        def assert_ok
+<span class="offending"><span class="linenum">69</span>          e = error</span>
+<span class="linenum">70</span>          raise e if e
+<span class="linenum">71</span>          return unless @code.nil? || @code >= 400
+<span class="linenum">72</span><span class="comment"># Install the coderay gem to get syntax highlighting</span></code></pre>
+      </div>
+    </dd>
     <script type="text/javascript">moveProgressBar('41.1');</script>
-    <dd class="example passed"><span class="passed_spec_name">Pressing the &quot;6&quot; button should add the &quot;6&quot; value to the expression field</span><span class='duration'>2.28003s</span></dd>
+    <dd class="example failed">
+      <span class="failed_spec_name">Pressing &quot;6&quot; should add the &quot;6&quot; value to the expression field</span>
+      <span class="duration">0.01058s</span>
+      <div class="failure" id="failure_4">
+        <div class="message"><pre>  Failure/Error: flash_and_ensure_click(@browser.button(value: &#39;6&#39;))
+
+  Selenium::WebDriver::Error::WebDriverError:
+    chrome not reachable
+      (Session info: chrome=69.0.3497.100)
+      (Driver info: chromedriver=2.40.565386 (45a059dc425e08165f9a10324bd1380cc13ca363),platform=Mac OS X 10.13.6 x86_64)
+  # /Users/dcloutier/.rvm/gems/ruby-2.5.1/gems/selenium-webdriver-3.14.1/lib/selenium/webdriver/remote/response.rb:69:in `assert_ok&#39;
+  # /Users/dcloutier/.rvm/gems/ruby-2.5.1/gems/selenium-webdriver-3.14.1/lib/selenium/webdriver/remote/response.rb:32:in `initialize&#39;
+  # /Users/dcloutier/.rvm/gems/ruby-2.5.1/gems/selenium-webdriver-3.14.1/lib/selenium/webdriver/remote/http/common.rb:84:in `new&#39;
+  # /Users/dcloutier/.rvm/gems/ruby-2.5.1/gems/selenium-webdriver-3.14.1/lib/selenium/webdriver/remote/http/common.rb:84:in `create_response&#39;
+  # /Users/dcloutier/.rvm/gems/ruby-2.5.1/gems/selenium-webdriver-3.14.1/lib/selenium/webdriver/remote/http/default.rb:104:in `request&#39;
+  # /Users/dcloutier/.rvm/gems/ruby-2.5.1/gems/selenium-webdriver-3.14.1/lib/selenium/webdriver/remote/http/common.rb:62:in `call&#39;
+  # /Users/dcloutier/.rvm/gems/ruby-2.5.1/gems/selenium-webdriver-3.14.1/lib/selenium/webdriver/remote/bridge.rb:164:in `execute&#39;
+  # /Users/dcloutier/.rvm/gems/ruby-2.5.1/gems/selenium-webdriver-3.14.1/lib/selenium/webdriver/remote/oss/bridge.rb:584:in `execute&#39;
+  # /Users/dcloutier/.rvm/gems/ruby-2.5.1/gems/selenium-webdriver-3.14.1/lib/selenium/webdriver/remote/oss/bridge.rb:552:in `find_element_by&#39;
+  # /Users/dcloutier/.rvm/gems/ruby-2.5.1/gems/selenium-webdriver-3.14.1/lib/selenium/webdriver/common/search_context.rb:60:in `find_element&#39;
+  # /Users/dcloutier/.rvm/gems/ruby-2.5.1/gems/watir-6.14.0/lib/watir/locators/element/locator.rb:286:in `locate_element&#39;
+  # /Users/dcloutier/.rvm/gems/ruby-2.5.1/gems/watir-6.14.0/lib/watir/locators/element/locator.rb:76:in `using_watir&#39;
+  # /Users/dcloutier/.rvm/gems/ruby-2.5.1/gems/watir-6.14.0/lib/watir/locators/element/locator.rb:35:in `locate&#39;
+  # /Users/dcloutier/.rvm/gems/ruby-2.5.1/gems/watir-6.14.0/lib/watir/elements/element.rb:693:in `locate_in_context&#39;
+  # /Users/dcloutier/.rvm/gems/ruby-2.5.1/gems/watir-6.14.0/lib/watir/elements/element.rb:583:in `locate&#39;
+  # /Users/dcloutier/.rvm/gems/ruby-2.5.1/gems/watir-6.14.0/lib/watir/elements/element.rb:680:in `assert_exists&#39;
+  # /Users/dcloutier/.rvm/gems/ruby-2.5.1/gems/watir-6.14.0/lib/watir/elements/element.rb:738:in `display_check&#39;
+  # /Users/dcloutier/.rvm/gems/ruby-2.5.1/gems/watir-6.14.0/lib/watir/elements/element.rb:481:in `present?&#39;
+  # /Users/dcloutier/.rvm/gems/ruby-2.5.1/gems/watir-6.14.0/lib/watir/wait.rb:43:in `block in until&#39;
+  # /Users/dcloutier/.rvm/gems/ruby-2.5.1/gems/watir-6.14.0/lib/watir/wait.rb:87:in `block in run_with_timer&#39;
+  # /Users/dcloutier/.rvm/gems/ruby-2.5.1/gems/watir-6.14.0/lib/watir/wait/timer.rb:19:in `block in wait&#39;
+  # /Users/dcloutier/.rvm/gems/ruby-2.5.1/gems/watir-6.14.0/lib/watir/wait/timer.rb:18:in `loop&#39;
+  # /Users/dcloutier/.rvm/gems/ruby-2.5.1/gems/watir-6.14.0/lib/watir/wait/timer.rb:18:in `wait&#39;
+  # /Users/dcloutier/.rvm/gems/ruby-2.5.1/gems/watir-6.14.0/lib/watir/wait.rb:86:in `run_with_timer&#39;
+  # /Users/dcloutier/.rvm/gems/ruby-2.5.1/gems/watir-6.14.0/lib/watir/wait.rb:42:in `until&#39;
+  # /Users/dcloutier/.rvm/gems/ruby-2.5.1/gems/watir-6.14.0/lib/watir/wait.rb:126:in `wait_until&#39;
+  # ./specs/spec_helper.rb:14:in `flash_and_ensure_click&#39;
+  # ./specs/operational.rb:42:in `block (4 levels) in &lt;top (required)&gt;&#39;</pre></div>
+        <div class="backtrace"><pre>/Users/dcloutier/.rvm/gems/ruby-2.5.1/gems/selenium-webdriver-3.14.1/lib/selenium/webdriver/remote/response.rb:69:in `assert_ok&#39;
+/Users/dcloutier/.rvm/gems/ruby-2.5.1/gems/selenium-webdriver-3.14.1/lib/selenium/webdriver/remote/response.rb:32:in `initialize&#39;
+/Users/dcloutier/.rvm/gems/ruby-2.5.1/gems/selenium-webdriver-3.14.1/lib/selenium/webdriver/remote/http/common.rb:84:in `new&#39;
+/Users/dcloutier/.rvm/gems/ruby-2.5.1/gems/selenium-webdriver-3.14.1/lib/selenium/webdriver/remote/http/common.rb:84:in `create_response&#39;
+/Users/dcloutier/.rvm/gems/ruby-2.5.1/gems/selenium-webdriver-3.14.1/lib/selenium/webdriver/remote/http/default.rb:104:in `request&#39;
+/Users/dcloutier/.rvm/gems/ruby-2.5.1/gems/selenium-webdriver-3.14.1/lib/selenium/webdriver/remote/http/common.rb:62:in `call&#39;
+/Users/dcloutier/.rvm/gems/ruby-2.5.1/gems/selenium-webdriver-3.14.1/lib/selenium/webdriver/remote/bridge.rb:164:in `execute&#39;
+/Users/dcloutier/.rvm/gems/ruby-2.5.1/gems/selenium-webdriver-3.14.1/lib/selenium/webdriver/remote/oss/bridge.rb:584:in `execute&#39;
+/Users/dcloutier/.rvm/gems/ruby-2.5.1/gems/selenium-webdriver-3.14.1/lib/selenium/webdriver/remote/oss/bridge.rb:552:in `find_element_by&#39;
+/Users/dcloutier/.rvm/gems/ruby-2.5.1/gems/selenium-webdriver-3.14.1/lib/selenium/webdriver/common/search_context.rb:60:in `find_element&#39;
+/Users/dcloutier/.rvm/gems/ruby-2.5.1/gems/watir-6.14.0/lib/watir/locators/element/locator.rb:286:in `locate_element&#39;
+/Users/dcloutier/.rvm/gems/ruby-2.5.1/gems/watir-6.14.0/lib/watir/locators/element/locator.rb:76:in `using_watir&#39;
+/Users/dcloutier/.rvm/gems/ruby-2.5.1/gems/watir-6.14.0/lib/watir/locators/element/locator.rb:35:in `locate&#39;
+/Users/dcloutier/.rvm/gems/ruby-2.5.1/gems/watir-6.14.0/lib/watir/elements/element.rb:693:in `locate_in_context&#39;
+/Users/dcloutier/.rvm/gems/ruby-2.5.1/gems/watir-6.14.0/lib/watir/elements/element.rb:583:in `locate&#39;
+/Users/dcloutier/.rvm/gems/ruby-2.5.1/gems/watir-6.14.0/lib/watir/elements/element.rb:680:in `assert_exists&#39;
+/Users/dcloutier/.rvm/gems/ruby-2.5.1/gems/watir-6.14.0/lib/watir/elements/element.rb:738:in `display_check&#39;
+/Users/dcloutier/.rvm/gems/ruby-2.5.1/gems/watir-6.14.0/lib/watir/elements/element.rb:481:in `present?&#39;
+/Users/dcloutier/.rvm/gems/ruby-2.5.1/gems/watir-6.14.0/lib/watir/wait.rb:43:in `block in until&#39;
+/Users/dcloutier/.rvm/gems/ruby-2.5.1/gems/watir-6.14.0/lib/watir/wait.rb:87:in `block in run_with_timer&#39;
+/Users/dcloutier/.rvm/gems/ruby-2.5.1/gems/watir-6.14.0/lib/watir/wait/timer.rb:19:in `block in wait&#39;
+/Users/dcloutier/.rvm/gems/ruby-2.5.1/gems/watir-6.14.0/lib/watir/wait/timer.rb:18:in `loop&#39;
+/Users/dcloutier/.rvm/gems/ruby-2.5.1/gems/watir-6.14.0/lib/watir/wait/timer.rb:18:in `wait&#39;
+/Users/dcloutier/.rvm/gems/ruby-2.5.1/gems/watir-6.14.0/lib/watir/wait.rb:86:in `run_with_timer&#39;
+/Users/dcloutier/.rvm/gems/ruby-2.5.1/gems/watir-6.14.0/lib/watir/wait.rb:42:in `until&#39;
+/Users/dcloutier/.rvm/gems/ruby-2.5.1/gems/watir-6.14.0/lib/watir/wait.rb:126:in `wait_until&#39;
+./specs/spec_helper.rb:14:in `flash_and_ensure_click&#39;
+./specs/operational.rb:42:in `block (4 levels) in &lt;top (required)&gt;&#39;</pre></div>
+    <pre class="ruby"><code><span class="linenum">67</span>
+<span class="linenum">68</span>        def assert_ok
+<span class="offending"><span class="linenum">69</span>          e = error</span>
+<span class="linenum">70</span>          raise e if e
+<span class="linenum">71</span>          return unless @code.nil? || @code >= 400
+<span class="linenum">72</span><span class="comment"># Install the coderay gem to get syntax highlighting</span></code></pre>
+      </div>
+    </dd>
     <script type="text/javascript">moveProgressBar('47.0');</script>
-    <dd class="example passed"><span class="passed_spec_name">Pressing the &quot;7&quot; button should add the &quot;7&quot; value to the expression field</span><span class='duration'>2.29053s</span></dd>
+    <dd class="example failed">
+      <span class="failed_spec_name">Pressing &quot;7&quot; should add the &quot;7&quot; value to the expression field</span>
+      <span class="duration">0.00343s</span>
+      <div class="failure" id="failure_5">
+        <div class="message"><pre>  Failure/Error: flash_and_ensure_click(@browser.button(value: &#39;7&#39;))
+
+  Selenium::WebDriver::Error::WebDriverError:
+    chrome not reachable
+      (Session info: chrome=69.0.3497.100)
+      (Driver info: chromedriver=2.40.565386 (45a059dc425e08165f9a10324bd1380cc13ca363),platform=Mac OS X 10.13.6 x86_64)
+  # /Users/dcloutier/.rvm/gems/ruby-2.5.1/gems/selenium-webdriver-3.14.1/lib/selenium/webdriver/remote/response.rb:69:in `assert_ok&#39;
+  # /Users/dcloutier/.rvm/gems/ruby-2.5.1/gems/selenium-webdriver-3.14.1/lib/selenium/webdriver/remote/response.rb:32:in `initialize&#39;
+  # /Users/dcloutier/.rvm/gems/ruby-2.5.1/gems/selenium-webdriver-3.14.1/lib/selenium/webdriver/remote/http/common.rb:84:in `new&#39;
+  # /Users/dcloutier/.rvm/gems/ruby-2.5.1/gems/selenium-webdriver-3.14.1/lib/selenium/webdriver/remote/http/common.rb:84:in `create_response&#39;
+  # /Users/dcloutier/.rvm/gems/ruby-2.5.1/gems/selenium-webdriver-3.14.1/lib/selenium/webdriver/remote/http/default.rb:104:in `request&#39;
+  # /Users/dcloutier/.rvm/gems/ruby-2.5.1/gems/selenium-webdriver-3.14.1/lib/selenium/webdriver/remote/http/common.rb:62:in `call&#39;
+  # /Users/dcloutier/.rvm/gems/ruby-2.5.1/gems/selenium-webdriver-3.14.1/lib/selenium/webdriver/remote/bridge.rb:164:in `execute&#39;
+  # /Users/dcloutier/.rvm/gems/ruby-2.5.1/gems/selenium-webdriver-3.14.1/lib/selenium/webdriver/remote/oss/bridge.rb:584:in `execute&#39;
+  # /Users/dcloutier/.rvm/gems/ruby-2.5.1/gems/selenium-webdriver-3.14.1/lib/selenium/webdriver/remote/oss/bridge.rb:552:in `find_element_by&#39;
+  # /Users/dcloutier/.rvm/gems/ruby-2.5.1/gems/selenium-webdriver-3.14.1/lib/selenium/webdriver/common/search_context.rb:60:in `find_element&#39;
+  # /Users/dcloutier/.rvm/gems/ruby-2.5.1/gems/watir-6.14.0/lib/watir/locators/element/locator.rb:286:in `locate_element&#39;
+  # /Users/dcloutier/.rvm/gems/ruby-2.5.1/gems/watir-6.14.0/lib/watir/locators/element/locator.rb:76:in `using_watir&#39;
+  # /Users/dcloutier/.rvm/gems/ruby-2.5.1/gems/watir-6.14.0/lib/watir/locators/element/locator.rb:35:in `locate&#39;
+  # /Users/dcloutier/.rvm/gems/ruby-2.5.1/gems/watir-6.14.0/lib/watir/elements/element.rb:693:in `locate_in_context&#39;
+  # /Users/dcloutier/.rvm/gems/ruby-2.5.1/gems/watir-6.14.0/lib/watir/elements/element.rb:583:in `locate&#39;
+  # /Users/dcloutier/.rvm/gems/ruby-2.5.1/gems/watir-6.14.0/lib/watir/elements/element.rb:680:in `assert_exists&#39;
+  # /Users/dcloutier/.rvm/gems/ruby-2.5.1/gems/watir-6.14.0/lib/watir/elements/element.rb:738:in `display_check&#39;
+  # /Users/dcloutier/.rvm/gems/ruby-2.5.1/gems/watir-6.14.0/lib/watir/elements/element.rb:481:in `present?&#39;
+  # /Users/dcloutier/.rvm/gems/ruby-2.5.1/gems/watir-6.14.0/lib/watir/wait.rb:43:in `block in until&#39;
+  # /Users/dcloutier/.rvm/gems/ruby-2.5.1/gems/watir-6.14.0/lib/watir/wait.rb:87:in `block in run_with_timer&#39;
+  # /Users/dcloutier/.rvm/gems/ruby-2.5.1/gems/watir-6.14.0/lib/watir/wait/timer.rb:19:in `block in wait&#39;
+  # /Users/dcloutier/.rvm/gems/ruby-2.5.1/gems/watir-6.14.0/lib/watir/wait/timer.rb:18:in `loop&#39;
+  # /Users/dcloutier/.rvm/gems/ruby-2.5.1/gems/watir-6.14.0/lib/watir/wait/timer.rb:18:in `wait&#39;
+  # /Users/dcloutier/.rvm/gems/ruby-2.5.1/gems/watir-6.14.0/lib/watir/wait.rb:86:in `run_with_timer&#39;
+  # /Users/dcloutier/.rvm/gems/ruby-2.5.1/gems/watir-6.14.0/lib/watir/wait.rb:42:in `until&#39;
+  # /Users/dcloutier/.rvm/gems/ruby-2.5.1/gems/watir-6.14.0/lib/watir/wait.rb:126:in `wait_until&#39;
+  # ./specs/spec_helper.rb:14:in `flash_and_ensure_click&#39;
+  # ./specs/operational.rb:46:in `block (4 levels) in &lt;top (required)&gt;&#39;</pre></div>
+        <div class="backtrace"><pre>/Users/dcloutier/.rvm/gems/ruby-2.5.1/gems/selenium-webdriver-3.14.1/lib/selenium/webdriver/remote/response.rb:69:in `assert_ok&#39;
+/Users/dcloutier/.rvm/gems/ruby-2.5.1/gems/selenium-webdriver-3.14.1/lib/selenium/webdriver/remote/response.rb:32:in `initialize&#39;
+/Users/dcloutier/.rvm/gems/ruby-2.5.1/gems/selenium-webdriver-3.14.1/lib/selenium/webdriver/remote/http/common.rb:84:in `new&#39;
+/Users/dcloutier/.rvm/gems/ruby-2.5.1/gems/selenium-webdriver-3.14.1/lib/selenium/webdriver/remote/http/common.rb:84:in `create_response&#39;
+/Users/dcloutier/.rvm/gems/ruby-2.5.1/gems/selenium-webdriver-3.14.1/lib/selenium/webdriver/remote/http/default.rb:104:in `request&#39;
+/Users/dcloutier/.rvm/gems/ruby-2.5.1/gems/selenium-webdriver-3.14.1/lib/selenium/webdriver/remote/http/common.rb:62:in `call&#39;
+/Users/dcloutier/.rvm/gems/ruby-2.5.1/gems/selenium-webdriver-3.14.1/lib/selenium/webdriver/remote/bridge.rb:164:in `execute&#39;
+/Users/dcloutier/.rvm/gems/ruby-2.5.1/gems/selenium-webdriver-3.14.1/lib/selenium/webdriver/remote/oss/bridge.rb:584:in `execute&#39;
+/Users/dcloutier/.rvm/gems/ruby-2.5.1/gems/selenium-webdriver-3.14.1/lib/selenium/webdriver/remote/oss/bridge.rb:552:in `find_element_by&#39;
+/Users/dcloutier/.rvm/gems/ruby-2.5.1/gems/selenium-webdriver-3.14.1/lib/selenium/webdriver/common/search_context.rb:60:in `find_element&#39;
+/Users/dcloutier/.rvm/gems/ruby-2.5.1/gems/watir-6.14.0/lib/watir/locators/element/locator.rb:286:in `locate_element&#39;
+/Users/dcloutier/.rvm/gems/ruby-2.5.1/gems/watir-6.14.0/lib/watir/locators/element/locator.rb:76:in `using_watir&#39;
+/Users/dcloutier/.rvm/gems/ruby-2.5.1/gems/watir-6.14.0/lib/watir/locators/element/locator.rb:35:in `locate&#39;
+/Users/dcloutier/.rvm/gems/ruby-2.5.1/gems/watir-6.14.0/lib/watir/elements/element.rb:693:in `locate_in_context&#39;
+/Users/dcloutier/.rvm/gems/ruby-2.5.1/gems/watir-6.14.0/lib/watir/elements/element.rb:583:in `locate&#39;
+/Users/dcloutier/.rvm/gems/ruby-2.5.1/gems/watir-6.14.0/lib/watir/elements/element.rb:680:in `assert_exists&#39;
+/Users/dcloutier/.rvm/gems/ruby-2.5.1/gems/watir-6.14.0/lib/watir/elements/element.rb:738:in `display_check&#39;
+/Users/dcloutier/.rvm/gems/ruby-2.5.1/gems/watir-6.14.0/lib/watir/elements/element.rb:481:in `present?&#39;
+/Users/dcloutier/.rvm/gems/ruby-2.5.1/gems/watir-6.14.0/lib/watir/wait.rb:43:in `block in until&#39;
+/Users/dcloutier/.rvm/gems/ruby-2.5.1/gems/watir-6.14.0/lib/watir/wait.rb:87:in `block in run_with_timer&#39;
+/Users/dcloutier/.rvm/gems/ruby-2.5.1/gems/watir-6.14.0/lib/watir/wait/timer.rb:19:in `block in wait&#39;
+/Users/dcloutier/.rvm/gems/ruby-2.5.1/gems/watir-6.14.0/lib/watir/wait/timer.rb:18:in `loop&#39;
+/Users/dcloutier/.rvm/gems/ruby-2.5.1/gems/watir-6.14.0/lib/watir/wait/timer.rb:18:in `wait&#39;
+/Users/dcloutier/.rvm/gems/ruby-2.5.1/gems/watir-6.14.0/lib/watir/wait.rb:86:in `run_with_timer&#39;
+/Users/dcloutier/.rvm/gems/ruby-2.5.1/gems/watir-6.14.0/lib/watir/wait.rb:42:in `until&#39;
+/Users/dcloutier/.rvm/gems/ruby-2.5.1/gems/watir-6.14.0/lib/watir/wait.rb:126:in `wait_until&#39;
+./specs/spec_helper.rb:14:in `flash_and_ensure_click&#39;
+./specs/operational.rb:46:in `block (4 levels) in &lt;top (required)&gt;&#39;</pre></div>
+    <pre class="ruby"><code><span class="linenum">67</span>
+<span class="linenum">68</span>        def assert_ok
+<span class="offending"><span class="linenum">69</span>          e = error</span>
+<span class="linenum">70</span>          raise e if e
+<span class="linenum">71</span>          return unless @code.nil? || @code >= 400
+<span class="linenum">72</span><span class="comment"># Install the coderay gem to get syntax highlighting</span></code></pre>
+      </div>
+    </dd>
     <script type="text/javascript">moveProgressBar('52.9');</script>
-    <dd class="example passed"><span class="passed_spec_name">Pressing the &quot;8&quot; button should add the &quot;8&quot; value to the expression field</span><span class='duration'>2.29434s</span></dd>
+    <dd class="example failed">
+      <span class="failed_spec_name">Pressing &quot;8&quot; should add the &quot;8&quot; value to the expression field</span>
+      <span class="duration">0.00476s</span>
+      <div class="failure" id="failure_6">
+        <div class="message"><pre>  Failure/Error: flash_and_ensure_click(@browser.button(value: &#39;8&#39;))
+
+  Selenium::WebDriver::Error::WebDriverError:
+    chrome not reachable
+      (Session info: chrome=69.0.3497.100)
+      (Driver info: chromedriver=2.40.565386 (45a059dc425e08165f9a10324bd1380cc13ca363),platform=Mac OS X 10.13.6 x86_64)
+  # /Users/dcloutier/.rvm/gems/ruby-2.5.1/gems/selenium-webdriver-3.14.1/lib/selenium/webdriver/remote/response.rb:69:in `assert_ok&#39;
+  # /Users/dcloutier/.rvm/gems/ruby-2.5.1/gems/selenium-webdriver-3.14.1/lib/selenium/webdriver/remote/response.rb:32:in `initialize&#39;
+  # /Users/dcloutier/.rvm/gems/ruby-2.5.1/gems/selenium-webdriver-3.14.1/lib/selenium/webdriver/remote/http/common.rb:84:in `new&#39;
+  # /Users/dcloutier/.rvm/gems/ruby-2.5.1/gems/selenium-webdriver-3.14.1/lib/selenium/webdriver/remote/http/common.rb:84:in `create_response&#39;
+  # /Users/dcloutier/.rvm/gems/ruby-2.5.1/gems/selenium-webdriver-3.14.1/lib/selenium/webdriver/remote/http/default.rb:104:in `request&#39;
+  # /Users/dcloutier/.rvm/gems/ruby-2.5.1/gems/selenium-webdriver-3.14.1/lib/selenium/webdriver/remote/http/common.rb:62:in `call&#39;
+  # /Users/dcloutier/.rvm/gems/ruby-2.5.1/gems/selenium-webdriver-3.14.1/lib/selenium/webdriver/remote/bridge.rb:164:in `execute&#39;
+  # /Users/dcloutier/.rvm/gems/ruby-2.5.1/gems/selenium-webdriver-3.14.1/lib/selenium/webdriver/remote/oss/bridge.rb:584:in `execute&#39;
+  # /Users/dcloutier/.rvm/gems/ruby-2.5.1/gems/selenium-webdriver-3.14.1/lib/selenium/webdriver/remote/oss/bridge.rb:552:in `find_element_by&#39;
+  # /Users/dcloutier/.rvm/gems/ruby-2.5.1/gems/selenium-webdriver-3.14.1/lib/selenium/webdriver/common/search_context.rb:60:in `find_element&#39;
+  # /Users/dcloutier/.rvm/gems/ruby-2.5.1/gems/watir-6.14.0/lib/watir/locators/element/locator.rb:286:in `locate_element&#39;
+  # /Users/dcloutier/.rvm/gems/ruby-2.5.1/gems/watir-6.14.0/lib/watir/locators/element/locator.rb:76:in `using_watir&#39;
+  # /Users/dcloutier/.rvm/gems/ruby-2.5.1/gems/watir-6.14.0/lib/watir/locators/element/locator.rb:35:in `locate&#39;
+  # /Users/dcloutier/.rvm/gems/ruby-2.5.1/gems/watir-6.14.0/lib/watir/elements/element.rb:693:in `locate_in_context&#39;
+  # /Users/dcloutier/.rvm/gems/ruby-2.5.1/gems/watir-6.14.0/lib/watir/elements/element.rb:583:in `locate&#39;
+  # /Users/dcloutier/.rvm/gems/ruby-2.5.1/gems/watir-6.14.0/lib/watir/elements/element.rb:680:in `assert_exists&#39;
+  # /Users/dcloutier/.rvm/gems/ruby-2.5.1/gems/watir-6.14.0/lib/watir/elements/element.rb:738:in `display_check&#39;
+  # /Users/dcloutier/.rvm/gems/ruby-2.5.1/gems/watir-6.14.0/lib/watir/elements/element.rb:481:in `present?&#39;
+  # /Users/dcloutier/.rvm/gems/ruby-2.5.1/gems/watir-6.14.0/lib/watir/wait.rb:43:in `block in until&#39;
+  # /Users/dcloutier/.rvm/gems/ruby-2.5.1/gems/watir-6.14.0/lib/watir/wait.rb:87:in `block in run_with_timer&#39;
+  # /Users/dcloutier/.rvm/gems/ruby-2.5.1/gems/watir-6.14.0/lib/watir/wait/timer.rb:19:in `block in wait&#39;
+  # /Users/dcloutier/.rvm/gems/ruby-2.5.1/gems/watir-6.14.0/lib/watir/wait/timer.rb:18:in `loop&#39;
+  # /Users/dcloutier/.rvm/gems/ruby-2.5.1/gems/watir-6.14.0/lib/watir/wait/timer.rb:18:in `wait&#39;
+  # /Users/dcloutier/.rvm/gems/ruby-2.5.1/gems/watir-6.14.0/lib/watir/wait.rb:86:in `run_with_timer&#39;
+  # /Users/dcloutier/.rvm/gems/ruby-2.5.1/gems/watir-6.14.0/lib/watir/wait.rb:42:in `until&#39;
+  # /Users/dcloutier/.rvm/gems/ruby-2.5.1/gems/watir-6.14.0/lib/watir/wait.rb:126:in `wait_until&#39;
+  # ./specs/spec_helper.rb:14:in `flash_and_ensure_click&#39;
+  # ./specs/operational.rb:50:in `block (4 levels) in &lt;top (required)&gt;&#39;</pre></div>
+        <div class="backtrace"><pre>/Users/dcloutier/.rvm/gems/ruby-2.5.1/gems/selenium-webdriver-3.14.1/lib/selenium/webdriver/remote/response.rb:69:in `assert_ok&#39;
+/Users/dcloutier/.rvm/gems/ruby-2.5.1/gems/selenium-webdriver-3.14.1/lib/selenium/webdriver/remote/response.rb:32:in `initialize&#39;
+/Users/dcloutier/.rvm/gems/ruby-2.5.1/gems/selenium-webdriver-3.14.1/lib/selenium/webdriver/remote/http/common.rb:84:in `new&#39;
+/Users/dcloutier/.rvm/gems/ruby-2.5.1/gems/selenium-webdriver-3.14.1/lib/selenium/webdriver/remote/http/common.rb:84:in `create_response&#39;
+/Users/dcloutier/.rvm/gems/ruby-2.5.1/gems/selenium-webdriver-3.14.1/lib/selenium/webdriver/remote/http/default.rb:104:in `request&#39;
+/Users/dcloutier/.rvm/gems/ruby-2.5.1/gems/selenium-webdriver-3.14.1/lib/selenium/webdriver/remote/http/common.rb:62:in `call&#39;
+/Users/dcloutier/.rvm/gems/ruby-2.5.1/gems/selenium-webdriver-3.14.1/lib/selenium/webdriver/remote/bridge.rb:164:in `execute&#39;
+/Users/dcloutier/.rvm/gems/ruby-2.5.1/gems/selenium-webdriver-3.14.1/lib/selenium/webdriver/remote/oss/bridge.rb:584:in `execute&#39;
+/Users/dcloutier/.rvm/gems/ruby-2.5.1/gems/selenium-webdriver-3.14.1/lib/selenium/webdriver/remote/oss/bridge.rb:552:in `find_element_by&#39;
+/Users/dcloutier/.rvm/gems/ruby-2.5.1/gems/selenium-webdriver-3.14.1/lib/selenium/webdriver/common/search_context.rb:60:in `find_element&#39;
+/Users/dcloutier/.rvm/gems/ruby-2.5.1/gems/watir-6.14.0/lib/watir/locators/element/locator.rb:286:in `locate_element&#39;
+/Users/dcloutier/.rvm/gems/ruby-2.5.1/gems/watir-6.14.0/lib/watir/locators/element/locator.rb:76:in `using_watir&#39;
+/Users/dcloutier/.rvm/gems/ruby-2.5.1/gems/watir-6.14.0/lib/watir/locators/element/locator.rb:35:in `locate&#39;
+/Users/dcloutier/.rvm/gems/ruby-2.5.1/gems/watir-6.14.0/lib/watir/elements/element.rb:693:in `locate_in_context&#39;
+/Users/dcloutier/.rvm/gems/ruby-2.5.1/gems/watir-6.14.0/lib/watir/elements/element.rb:583:in `locate&#39;
+/Users/dcloutier/.rvm/gems/ruby-2.5.1/gems/watir-6.14.0/lib/watir/elements/element.rb:680:in `assert_exists&#39;
+/Users/dcloutier/.rvm/gems/ruby-2.5.1/gems/watir-6.14.0/lib/watir/elements/element.rb:738:in `display_check&#39;
+/Users/dcloutier/.rvm/gems/ruby-2.5.1/gems/watir-6.14.0/lib/watir/elements/element.rb:481:in `present?&#39;
+/Users/dcloutier/.rvm/gems/ruby-2.5.1/gems/watir-6.14.0/lib/watir/wait.rb:43:in `block in until&#39;
+/Users/dcloutier/.rvm/gems/ruby-2.5.1/gems/watir-6.14.0/lib/watir/wait.rb:87:in `block in run_with_timer&#39;
+/Users/dcloutier/.rvm/gems/ruby-2.5.1/gems/watir-6.14.0/lib/watir/wait/timer.rb:19:in `block in wait&#39;
+/Users/dcloutier/.rvm/gems/ruby-2.5.1/gems/watir-6.14.0/lib/watir/wait/timer.rb:18:in `loop&#39;
+/Users/dcloutier/.rvm/gems/ruby-2.5.1/gems/watir-6.14.0/lib/watir/wait/timer.rb:18:in `wait&#39;
+/Users/dcloutier/.rvm/gems/ruby-2.5.1/gems/watir-6.14.0/lib/watir/wait.rb:86:in `run_with_timer&#39;
+/Users/dcloutier/.rvm/gems/ruby-2.5.1/gems/watir-6.14.0/lib/watir/wait.rb:42:in `until&#39;
+/Users/dcloutier/.rvm/gems/ruby-2.5.1/gems/watir-6.14.0/lib/watir/wait.rb:126:in `wait_until&#39;
+./specs/spec_helper.rb:14:in `flash_and_ensure_click&#39;
+./specs/operational.rb:50:in `block (4 levels) in &lt;top (required)&gt;&#39;</pre></div>
+    <pre class="ruby"><code><span class="linenum">67</span>
+<span class="linenum">68</span>        def assert_ok
+<span class="offending"><span class="linenum">69</span>          e = error</span>
+<span class="linenum">70</span>          raise e if e
+<span class="linenum">71</span>          return unless @code.nil? || @code >= 400
+<span class="linenum">72</span><span class="comment"># Install the coderay gem to get syntax highlighting</span></code></pre>
+      </div>
+    </dd>
     <script type="text/javascript">moveProgressBar('58.8');</script>
-    <dd class="example passed"><span class="passed_spec_name">Pressing the &quot;9&quot; button should add the &quot;9&quot; value to the expression field</span><span class='duration'>2.27892s</span></dd>
+    <dd class="example failed">
+      <span class="failed_spec_name">Pressing &quot;9&quot; should add the &quot;9&quot; value to the expression field</span>
+      <span class="duration">0.00687s</span>
+      <div class="failure" id="failure_7">
+        <div class="message"><pre>  Failure/Error: flash_and_ensure_click(@browser.button(value: &#39;9&#39;))
+
+  Selenium::WebDriver::Error::WebDriverError:
+    chrome not reachable
+      (Session info: chrome=69.0.3497.100)
+      (Driver info: chromedriver=2.40.565386 (45a059dc425e08165f9a10324bd1380cc13ca363),platform=Mac OS X 10.13.6 x86_64)
+  # /Users/dcloutier/.rvm/gems/ruby-2.5.1/gems/selenium-webdriver-3.14.1/lib/selenium/webdriver/remote/response.rb:69:in `assert_ok&#39;
+  # /Users/dcloutier/.rvm/gems/ruby-2.5.1/gems/selenium-webdriver-3.14.1/lib/selenium/webdriver/remote/response.rb:32:in `initialize&#39;
+  # /Users/dcloutier/.rvm/gems/ruby-2.5.1/gems/selenium-webdriver-3.14.1/lib/selenium/webdriver/remote/http/common.rb:84:in `new&#39;
+  # /Users/dcloutier/.rvm/gems/ruby-2.5.1/gems/selenium-webdriver-3.14.1/lib/selenium/webdriver/remote/http/common.rb:84:in `create_response&#39;
+  # /Users/dcloutier/.rvm/gems/ruby-2.5.1/gems/selenium-webdriver-3.14.1/lib/selenium/webdriver/remote/http/default.rb:104:in `request&#39;
+  # /Users/dcloutier/.rvm/gems/ruby-2.5.1/gems/selenium-webdriver-3.14.1/lib/selenium/webdriver/remote/http/common.rb:62:in `call&#39;
+  # /Users/dcloutier/.rvm/gems/ruby-2.5.1/gems/selenium-webdriver-3.14.1/lib/selenium/webdriver/remote/bridge.rb:164:in `execute&#39;
+  # /Users/dcloutier/.rvm/gems/ruby-2.5.1/gems/selenium-webdriver-3.14.1/lib/selenium/webdriver/remote/oss/bridge.rb:584:in `execute&#39;
+  # /Users/dcloutier/.rvm/gems/ruby-2.5.1/gems/selenium-webdriver-3.14.1/lib/selenium/webdriver/remote/oss/bridge.rb:552:in `find_element_by&#39;
+  # /Users/dcloutier/.rvm/gems/ruby-2.5.1/gems/selenium-webdriver-3.14.1/lib/selenium/webdriver/common/search_context.rb:60:in `find_element&#39;
+  # /Users/dcloutier/.rvm/gems/ruby-2.5.1/gems/watir-6.14.0/lib/watir/locators/element/locator.rb:286:in `locate_element&#39;
+  # /Users/dcloutier/.rvm/gems/ruby-2.5.1/gems/watir-6.14.0/lib/watir/locators/element/locator.rb:76:in `using_watir&#39;
+  # /Users/dcloutier/.rvm/gems/ruby-2.5.1/gems/watir-6.14.0/lib/watir/locators/element/locator.rb:35:in `locate&#39;
+  # /Users/dcloutier/.rvm/gems/ruby-2.5.1/gems/watir-6.14.0/lib/watir/elements/element.rb:693:in `locate_in_context&#39;
+  # /Users/dcloutier/.rvm/gems/ruby-2.5.1/gems/watir-6.14.0/lib/watir/elements/element.rb:583:in `locate&#39;
+  # /Users/dcloutier/.rvm/gems/ruby-2.5.1/gems/watir-6.14.0/lib/watir/elements/element.rb:680:in `assert_exists&#39;
+  # /Users/dcloutier/.rvm/gems/ruby-2.5.1/gems/watir-6.14.0/lib/watir/elements/element.rb:738:in `display_check&#39;
+  # /Users/dcloutier/.rvm/gems/ruby-2.5.1/gems/watir-6.14.0/lib/watir/elements/element.rb:481:in `present?&#39;
+  # /Users/dcloutier/.rvm/gems/ruby-2.5.1/gems/watir-6.14.0/lib/watir/wait.rb:43:in `block in until&#39;
+  # /Users/dcloutier/.rvm/gems/ruby-2.5.1/gems/watir-6.14.0/lib/watir/wait.rb:87:in `block in run_with_timer&#39;
+  # /Users/dcloutier/.rvm/gems/ruby-2.5.1/gems/watir-6.14.0/lib/watir/wait/timer.rb:19:in `block in wait&#39;
+  # /Users/dcloutier/.rvm/gems/ruby-2.5.1/gems/watir-6.14.0/lib/watir/wait/timer.rb:18:in `loop&#39;
+  # /Users/dcloutier/.rvm/gems/ruby-2.5.1/gems/watir-6.14.0/lib/watir/wait/timer.rb:18:in `wait&#39;
+  # /Users/dcloutier/.rvm/gems/ruby-2.5.1/gems/watir-6.14.0/lib/watir/wait.rb:86:in `run_with_timer&#39;
+  # /Users/dcloutier/.rvm/gems/ruby-2.5.1/gems/watir-6.14.0/lib/watir/wait.rb:42:in `until&#39;
+  # /Users/dcloutier/.rvm/gems/ruby-2.5.1/gems/watir-6.14.0/lib/watir/wait.rb:126:in `wait_until&#39;
+  # ./specs/spec_helper.rb:14:in `flash_and_ensure_click&#39;
+  # ./specs/operational.rb:54:in `block (4 levels) in &lt;top (required)&gt;&#39;</pre></div>
+        <div class="backtrace"><pre>/Users/dcloutier/.rvm/gems/ruby-2.5.1/gems/selenium-webdriver-3.14.1/lib/selenium/webdriver/remote/response.rb:69:in `assert_ok&#39;
+/Users/dcloutier/.rvm/gems/ruby-2.5.1/gems/selenium-webdriver-3.14.1/lib/selenium/webdriver/remote/response.rb:32:in `initialize&#39;
+/Users/dcloutier/.rvm/gems/ruby-2.5.1/gems/selenium-webdriver-3.14.1/lib/selenium/webdriver/remote/http/common.rb:84:in `new&#39;
+/Users/dcloutier/.rvm/gems/ruby-2.5.1/gems/selenium-webdriver-3.14.1/lib/selenium/webdriver/remote/http/common.rb:84:in `create_response&#39;
+/Users/dcloutier/.rvm/gems/ruby-2.5.1/gems/selenium-webdriver-3.14.1/lib/selenium/webdriver/remote/http/default.rb:104:in `request&#39;
+/Users/dcloutier/.rvm/gems/ruby-2.5.1/gems/selenium-webdriver-3.14.1/lib/selenium/webdriver/remote/http/common.rb:62:in `call&#39;
+/Users/dcloutier/.rvm/gems/ruby-2.5.1/gems/selenium-webdriver-3.14.1/lib/selenium/webdriver/remote/bridge.rb:164:in `execute&#39;
+/Users/dcloutier/.rvm/gems/ruby-2.5.1/gems/selenium-webdriver-3.14.1/lib/selenium/webdriver/remote/oss/bridge.rb:584:in `execute&#39;
+/Users/dcloutier/.rvm/gems/ruby-2.5.1/gems/selenium-webdriver-3.14.1/lib/selenium/webdriver/remote/oss/bridge.rb:552:in `find_element_by&#39;
+/Users/dcloutier/.rvm/gems/ruby-2.5.1/gems/selenium-webdriver-3.14.1/lib/selenium/webdriver/common/search_context.rb:60:in `find_element&#39;
+/Users/dcloutier/.rvm/gems/ruby-2.5.1/gems/watir-6.14.0/lib/watir/locators/element/locator.rb:286:in `locate_element&#39;
+/Users/dcloutier/.rvm/gems/ruby-2.5.1/gems/watir-6.14.0/lib/watir/locators/element/locator.rb:76:in `using_watir&#39;
+/Users/dcloutier/.rvm/gems/ruby-2.5.1/gems/watir-6.14.0/lib/watir/locators/element/locator.rb:35:in `locate&#39;
+/Users/dcloutier/.rvm/gems/ruby-2.5.1/gems/watir-6.14.0/lib/watir/elements/element.rb:693:in `locate_in_context&#39;
+/Users/dcloutier/.rvm/gems/ruby-2.5.1/gems/watir-6.14.0/lib/watir/elements/element.rb:583:in `locate&#39;
+/Users/dcloutier/.rvm/gems/ruby-2.5.1/gems/watir-6.14.0/lib/watir/elements/element.rb:680:in `assert_exists&#39;
+/Users/dcloutier/.rvm/gems/ruby-2.5.1/gems/watir-6.14.0/lib/watir/elements/element.rb:738:in `display_check&#39;
+/Users/dcloutier/.rvm/gems/ruby-2.5.1/gems/watir-6.14.0/lib/watir/elements/element.rb:481:in `present?&#39;
+/Users/dcloutier/.rvm/gems/ruby-2.5.1/gems/watir-6.14.0/lib/watir/wait.rb:43:in `block in until&#39;
+/Users/dcloutier/.rvm/gems/ruby-2.5.1/gems/watir-6.14.0/lib/watir/wait.rb:87:in `block in run_with_timer&#39;
+/Users/dcloutier/.rvm/gems/ruby-2.5.1/gems/watir-6.14.0/lib/watir/wait/timer.rb:19:in `block in wait&#39;
+/Users/dcloutier/.rvm/gems/ruby-2.5.1/gems/watir-6.14.0/lib/watir/wait/timer.rb:18:in `loop&#39;
+/Users/dcloutier/.rvm/gems/ruby-2.5.1/gems/watir-6.14.0/lib/watir/wait/timer.rb:18:in `wait&#39;
+/Users/dcloutier/.rvm/gems/ruby-2.5.1/gems/watir-6.14.0/lib/watir/wait.rb:86:in `run_with_timer&#39;
+/Users/dcloutier/.rvm/gems/ruby-2.5.1/gems/watir-6.14.0/lib/watir/wait.rb:42:in `until&#39;
+/Users/dcloutier/.rvm/gems/ruby-2.5.1/gems/watir-6.14.0/lib/watir/wait.rb:126:in `wait_until&#39;
+./specs/spec_helper.rb:14:in `flash_and_ensure_click&#39;
+./specs/operational.rb:54:in `block (4 levels) in &lt;top (required)&gt;&#39;</pre></div>
+    <pre class="ruby"><code><span class="linenum">67</span>
+<span class="linenum">68</span>        def assert_ok
+<span class="offending"><span class="linenum">69</span>          e = error</span>
+<span class="linenum">70</span>          raise e if e
+<span class="linenum">71</span>          return unless @code.nil? || @code >= 400
+<span class="linenum">72</span><span class="comment"># Install the coderay gem to get syntax highlighting</span></code></pre>
+      </div>
+    </dd>
     <script type="text/javascript">moveProgressBar('64.7');</script>
-    <dd class="example passed"><span class="passed_spec_name">Pressing the &quot;0&quot; button should add the &quot;0&quot; value to the expression field</span><span class='duration'>2.27236s</span></dd>
+    <dd class="example failed">
+      <span class="failed_spec_name">Pressing &quot;0&quot; should add the &quot;0&quot; value to the expression field</span>
+      <span class="duration">0.00860s</span>
+      <div class="failure" id="failure_8">
+        <div class="message"><pre>  Failure/Error: flash_and_ensure_click(@browser.button(value: &#39;0&#39;))
+
+  Selenium::WebDriver::Error::WebDriverError:
+    chrome not reachable
+      (Session info: chrome=69.0.3497.100)
+      (Driver info: chromedriver=2.40.565386 (45a059dc425e08165f9a10324bd1380cc13ca363),platform=Mac OS X 10.13.6 x86_64)
+  # /Users/dcloutier/.rvm/gems/ruby-2.5.1/gems/selenium-webdriver-3.14.1/lib/selenium/webdriver/remote/response.rb:69:in `assert_ok&#39;
+  # /Users/dcloutier/.rvm/gems/ruby-2.5.1/gems/selenium-webdriver-3.14.1/lib/selenium/webdriver/remote/response.rb:32:in `initialize&#39;
+  # /Users/dcloutier/.rvm/gems/ruby-2.5.1/gems/selenium-webdriver-3.14.1/lib/selenium/webdriver/remote/http/common.rb:84:in `new&#39;
+  # /Users/dcloutier/.rvm/gems/ruby-2.5.1/gems/selenium-webdriver-3.14.1/lib/selenium/webdriver/remote/http/common.rb:84:in `create_response&#39;
+  # /Users/dcloutier/.rvm/gems/ruby-2.5.1/gems/selenium-webdriver-3.14.1/lib/selenium/webdriver/remote/http/default.rb:104:in `request&#39;
+  # /Users/dcloutier/.rvm/gems/ruby-2.5.1/gems/selenium-webdriver-3.14.1/lib/selenium/webdriver/remote/http/common.rb:62:in `call&#39;
+  # /Users/dcloutier/.rvm/gems/ruby-2.5.1/gems/selenium-webdriver-3.14.1/lib/selenium/webdriver/remote/bridge.rb:164:in `execute&#39;
+  # /Users/dcloutier/.rvm/gems/ruby-2.5.1/gems/selenium-webdriver-3.14.1/lib/selenium/webdriver/remote/oss/bridge.rb:584:in `execute&#39;
+  # /Users/dcloutier/.rvm/gems/ruby-2.5.1/gems/selenium-webdriver-3.14.1/lib/selenium/webdriver/remote/oss/bridge.rb:552:in `find_element_by&#39;
+  # /Users/dcloutier/.rvm/gems/ruby-2.5.1/gems/selenium-webdriver-3.14.1/lib/selenium/webdriver/common/search_context.rb:60:in `find_element&#39;
+  # /Users/dcloutier/.rvm/gems/ruby-2.5.1/gems/watir-6.14.0/lib/watir/locators/element/locator.rb:286:in `locate_element&#39;
+  # /Users/dcloutier/.rvm/gems/ruby-2.5.1/gems/watir-6.14.0/lib/watir/locators/element/locator.rb:76:in `using_watir&#39;
+  # /Users/dcloutier/.rvm/gems/ruby-2.5.1/gems/watir-6.14.0/lib/watir/locators/element/locator.rb:35:in `locate&#39;
+  # /Users/dcloutier/.rvm/gems/ruby-2.5.1/gems/watir-6.14.0/lib/watir/elements/element.rb:693:in `locate_in_context&#39;
+  # /Users/dcloutier/.rvm/gems/ruby-2.5.1/gems/watir-6.14.0/lib/watir/elements/element.rb:583:in `locate&#39;
+  # /Users/dcloutier/.rvm/gems/ruby-2.5.1/gems/watir-6.14.0/lib/watir/elements/element.rb:680:in `assert_exists&#39;
+  # /Users/dcloutier/.rvm/gems/ruby-2.5.1/gems/watir-6.14.0/lib/watir/elements/element.rb:738:in `display_check&#39;
+  # /Users/dcloutier/.rvm/gems/ruby-2.5.1/gems/watir-6.14.0/lib/watir/elements/element.rb:481:in `present?&#39;
+  # /Users/dcloutier/.rvm/gems/ruby-2.5.1/gems/watir-6.14.0/lib/watir/wait.rb:43:in `block in until&#39;
+  # /Users/dcloutier/.rvm/gems/ruby-2.5.1/gems/watir-6.14.0/lib/watir/wait.rb:87:in `block in run_with_timer&#39;
+  # /Users/dcloutier/.rvm/gems/ruby-2.5.1/gems/watir-6.14.0/lib/watir/wait/timer.rb:19:in `block in wait&#39;
+  # /Users/dcloutier/.rvm/gems/ruby-2.5.1/gems/watir-6.14.0/lib/watir/wait/timer.rb:18:in `loop&#39;
+  # /Users/dcloutier/.rvm/gems/ruby-2.5.1/gems/watir-6.14.0/lib/watir/wait/timer.rb:18:in `wait&#39;
+  # /Users/dcloutier/.rvm/gems/ruby-2.5.1/gems/watir-6.14.0/lib/watir/wait.rb:86:in `run_with_timer&#39;
+  # /Users/dcloutier/.rvm/gems/ruby-2.5.1/gems/watir-6.14.0/lib/watir/wait.rb:42:in `until&#39;
+  # /Users/dcloutier/.rvm/gems/ruby-2.5.1/gems/watir-6.14.0/lib/watir/wait.rb:126:in `wait_until&#39;
+  # ./specs/spec_helper.rb:14:in `flash_and_ensure_click&#39;
+  # ./specs/operational.rb:58:in `block (4 levels) in &lt;top (required)&gt;&#39;</pre></div>
+        <div class="backtrace"><pre>/Users/dcloutier/.rvm/gems/ruby-2.5.1/gems/selenium-webdriver-3.14.1/lib/selenium/webdriver/remote/response.rb:69:in `assert_ok&#39;
+/Users/dcloutier/.rvm/gems/ruby-2.5.1/gems/selenium-webdriver-3.14.1/lib/selenium/webdriver/remote/response.rb:32:in `initialize&#39;
+/Users/dcloutier/.rvm/gems/ruby-2.5.1/gems/selenium-webdriver-3.14.1/lib/selenium/webdriver/remote/http/common.rb:84:in `new&#39;
+/Users/dcloutier/.rvm/gems/ruby-2.5.1/gems/selenium-webdriver-3.14.1/lib/selenium/webdriver/remote/http/common.rb:84:in `create_response&#39;
+/Users/dcloutier/.rvm/gems/ruby-2.5.1/gems/selenium-webdriver-3.14.1/lib/selenium/webdriver/remote/http/default.rb:104:in `request&#39;
+/Users/dcloutier/.rvm/gems/ruby-2.5.1/gems/selenium-webdriver-3.14.1/lib/selenium/webdriver/remote/http/common.rb:62:in `call&#39;
+/Users/dcloutier/.rvm/gems/ruby-2.5.1/gems/selenium-webdriver-3.14.1/lib/selenium/webdriver/remote/bridge.rb:164:in `execute&#39;
+/Users/dcloutier/.rvm/gems/ruby-2.5.1/gems/selenium-webdriver-3.14.1/lib/selenium/webdriver/remote/oss/bridge.rb:584:in `execute&#39;
+/Users/dcloutier/.rvm/gems/ruby-2.5.1/gems/selenium-webdriver-3.14.1/lib/selenium/webdriver/remote/oss/bridge.rb:552:in `find_element_by&#39;
+/Users/dcloutier/.rvm/gems/ruby-2.5.1/gems/selenium-webdriver-3.14.1/lib/selenium/webdriver/common/search_context.rb:60:in `find_element&#39;
+/Users/dcloutier/.rvm/gems/ruby-2.5.1/gems/watir-6.14.0/lib/watir/locators/element/locator.rb:286:in `locate_element&#39;
+/Users/dcloutier/.rvm/gems/ruby-2.5.1/gems/watir-6.14.0/lib/watir/locators/element/locator.rb:76:in `using_watir&#39;
+/Users/dcloutier/.rvm/gems/ruby-2.5.1/gems/watir-6.14.0/lib/watir/locators/element/locator.rb:35:in `locate&#39;
+/Users/dcloutier/.rvm/gems/ruby-2.5.1/gems/watir-6.14.0/lib/watir/elements/element.rb:693:in `locate_in_context&#39;
+/Users/dcloutier/.rvm/gems/ruby-2.5.1/gems/watir-6.14.0/lib/watir/elements/element.rb:583:in `locate&#39;
+/Users/dcloutier/.rvm/gems/ruby-2.5.1/gems/watir-6.14.0/lib/watir/elements/element.rb:680:in `assert_exists&#39;
+/Users/dcloutier/.rvm/gems/ruby-2.5.1/gems/watir-6.14.0/lib/watir/elements/element.rb:738:in `display_check&#39;
+/Users/dcloutier/.rvm/gems/ruby-2.5.1/gems/watir-6.14.0/lib/watir/elements/element.rb:481:in `present?&#39;
+/Users/dcloutier/.rvm/gems/ruby-2.5.1/gems/watir-6.14.0/lib/watir/wait.rb:43:in `block in until&#39;
+/Users/dcloutier/.rvm/gems/ruby-2.5.1/gems/watir-6.14.0/lib/watir/wait.rb:87:in `block in run_with_timer&#39;
+/Users/dcloutier/.rvm/gems/ruby-2.5.1/gems/watir-6.14.0/lib/watir/wait/timer.rb:19:in `block in wait&#39;
+/Users/dcloutier/.rvm/gems/ruby-2.5.1/gems/watir-6.14.0/lib/watir/wait/timer.rb:18:in `loop&#39;
+/Users/dcloutier/.rvm/gems/ruby-2.5.1/gems/watir-6.14.0/lib/watir/wait/timer.rb:18:in `wait&#39;
+/Users/dcloutier/.rvm/gems/ruby-2.5.1/gems/watir-6.14.0/lib/watir/wait.rb:86:in `run_with_timer&#39;
+/Users/dcloutier/.rvm/gems/ruby-2.5.1/gems/watir-6.14.0/lib/watir/wait.rb:42:in `until&#39;
+/Users/dcloutier/.rvm/gems/ruby-2.5.1/gems/watir-6.14.0/lib/watir/wait.rb:126:in `wait_until&#39;
+./specs/spec_helper.rb:14:in `flash_and_ensure_click&#39;
+./specs/operational.rb:58:in `block (4 levels) in &lt;top (required)&gt;&#39;</pre></div>
+    <pre class="ruby"><code><span class="linenum">67</span>
+<span class="linenum">68</span>        def assert_ok
+<span class="offending"><span class="linenum">69</span>          e = error</span>
+<span class="linenum">70</span>          raise e if e
+<span class="linenum">71</span>          return unless @code.nil? || @code >= 400
+<span class="linenum">72</span><span class="comment"># Install the coderay gem to get syntax highlighting</span></code></pre>
+      </div>
+    </dd>
   </dl>
 </div>
 <div id="div_group_5" class="example_group passed">
   <dl style="margin-left: 30px;">
   <dt id="example_group_5" class="passed">Assessing that Operation keys are functional</dt>
+    <script type="text/javascript">makeRed('div_group_5');</script>
+    <script type="text/javascript">makeRed('example_group_5');</script>
     <script type="text/javascript">moveProgressBar('70.5');</script>
-    <dd class="example passed"><span class="passed_spec_name">Pressing the &quot;PLUS&quot; button should add the &quot;+&quot; value to the expression field</span><span class='duration'>2.28508s</span></dd>
+    <dd class="example failed">
+      <span class="failed_spec_name">Pressing &quot;PLUS&quot; should add the &quot;+&quot; value to the expression field</span>
+      <span class="duration">0.00449s</span>
+      <div class="failure" id="failure_9">
+        <div class="message"><pre>  Failure/Error: flash_and_ensure_click(@browser.button(text: &#39;PLUS&#39;, class: &#39;operation&#39;))
+
+  Selenium::WebDriver::Error::WebDriverError:
+    chrome not reachable
+      (Session info: chrome=69.0.3497.100)
+      (Driver info: chromedriver=2.40.565386 (45a059dc425e08165f9a10324bd1380cc13ca363),platform=Mac OS X 10.13.6 x86_64)
+  # /Users/dcloutier/.rvm/gems/ruby-2.5.1/gems/selenium-webdriver-3.14.1/lib/selenium/webdriver/remote/response.rb:69:in `assert_ok&#39;
+  # /Users/dcloutier/.rvm/gems/ruby-2.5.1/gems/selenium-webdriver-3.14.1/lib/selenium/webdriver/remote/response.rb:32:in `initialize&#39;
+  # /Users/dcloutier/.rvm/gems/ruby-2.5.1/gems/selenium-webdriver-3.14.1/lib/selenium/webdriver/remote/http/common.rb:84:in `new&#39;
+  # /Users/dcloutier/.rvm/gems/ruby-2.5.1/gems/selenium-webdriver-3.14.1/lib/selenium/webdriver/remote/http/common.rb:84:in `create_response&#39;
+  # /Users/dcloutier/.rvm/gems/ruby-2.5.1/gems/selenium-webdriver-3.14.1/lib/selenium/webdriver/remote/http/default.rb:104:in `request&#39;
+  # /Users/dcloutier/.rvm/gems/ruby-2.5.1/gems/selenium-webdriver-3.14.1/lib/selenium/webdriver/remote/http/common.rb:62:in `call&#39;
+  # /Users/dcloutier/.rvm/gems/ruby-2.5.1/gems/selenium-webdriver-3.14.1/lib/selenium/webdriver/remote/bridge.rb:164:in `execute&#39;
+  # /Users/dcloutier/.rvm/gems/ruby-2.5.1/gems/selenium-webdriver-3.14.1/lib/selenium/webdriver/remote/oss/bridge.rb:584:in `execute&#39;
+  # /Users/dcloutier/.rvm/gems/ruby-2.5.1/gems/selenium-webdriver-3.14.1/lib/selenium/webdriver/remote/oss/bridge.rb:552:in `find_element_by&#39;
+  # /Users/dcloutier/.rvm/gems/ruby-2.5.1/gems/selenium-webdriver-3.14.1/lib/selenium/webdriver/common/search_context.rb:60:in `find_element&#39;
+  # /Users/dcloutier/.rvm/gems/ruby-2.5.1/gems/watir-6.14.0/lib/watir/locators/element/locator.rb:286:in `locate_element&#39;
+  # /Users/dcloutier/.rvm/gems/ruby-2.5.1/gems/watir-6.14.0/lib/watir/locators/element/locator.rb:76:in `using_watir&#39;
+  # /Users/dcloutier/.rvm/gems/ruby-2.5.1/gems/watir-6.14.0/lib/watir/locators/element/locator.rb:35:in `locate&#39;
+  # /Users/dcloutier/.rvm/gems/ruby-2.5.1/gems/watir-6.14.0/lib/watir/elements/element.rb:693:in `locate_in_context&#39;
+  # /Users/dcloutier/.rvm/gems/ruby-2.5.1/gems/watir-6.14.0/lib/watir/elements/element.rb:583:in `locate&#39;
+  # /Users/dcloutier/.rvm/gems/ruby-2.5.1/gems/watir-6.14.0/lib/watir/elements/element.rb:680:in `assert_exists&#39;
+  # /Users/dcloutier/.rvm/gems/ruby-2.5.1/gems/watir-6.14.0/lib/watir/elements/element.rb:738:in `display_check&#39;
+  # /Users/dcloutier/.rvm/gems/ruby-2.5.1/gems/watir-6.14.0/lib/watir/elements/element.rb:481:in `present?&#39;
+  # /Users/dcloutier/.rvm/gems/ruby-2.5.1/gems/watir-6.14.0/lib/watir/wait.rb:43:in `block in until&#39;
+  # /Users/dcloutier/.rvm/gems/ruby-2.5.1/gems/watir-6.14.0/lib/watir/wait.rb:87:in `block in run_with_timer&#39;
+  # /Users/dcloutier/.rvm/gems/ruby-2.5.1/gems/watir-6.14.0/lib/watir/wait/timer.rb:19:in `block in wait&#39;
+  # /Users/dcloutier/.rvm/gems/ruby-2.5.1/gems/watir-6.14.0/lib/watir/wait/timer.rb:18:in `loop&#39;
+  # /Users/dcloutier/.rvm/gems/ruby-2.5.1/gems/watir-6.14.0/lib/watir/wait/timer.rb:18:in `wait&#39;
+  # /Users/dcloutier/.rvm/gems/ruby-2.5.1/gems/watir-6.14.0/lib/watir/wait.rb:86:in `run_with_timer&#39;
+  # /Users/dcloutier/.rvm/gems/ruby-2.5.1/gems/watir-6.14.0/lib/watir/wait.rb:42:in `until&#39;
+  # /Users/dcloutier/.rvm/gems/ruby-2.5.1/gems/watir-6.14.0/lib/watir/wait.rb:126:in `wait_until&#39;
+  # ./specs/spec_helper.rb:14:in `flash_and_ensure_click&#39;
+  # ./specs/operational.rb:66:in `block (4 levels) in &lt;top (required)&gt;&#39;</pre></div>
+        <div class="backtrace"><pre>/Users/dcloutier/.rvm/gems/ruby-2.5.1/gems/selenium-webdriver-3.14.1/lib/selenium/webdriver/remote/response.rb:69:in `assert_ok&#39;
+/Users/dcloutier/.rvm/gems/ruby-2.5.1/gems/selenium-webdriver-3.14.1/lib/selenium/webdriver/remote/response.rb:32:in `initialize&#39;
+/Users/dcloutier/.rvm/gems/ruby-2.5.1/gems/selenium-webdriver-3.14.1/lib/selenium/webdriver/remote/http/common.rb:84:in `new&#39;
+/Users/dcloutier/.rvm/gems/ruby-2.5.1/gems/selenium-webdriver-3.14.1/lib/selenium/webdriver/remote/http/common.rb:84:in `create_response&#39;
+/Users/dcloutier/.rvm/gems/ruby-2.5.1/gems/selenium-webdriver-3.14.1/lib/selenium/webdriver/remote/http/default.rb:104:in `request&#39;
+/Users/dcloutier/.rvm/gems/ruby-2.5.1/gems/selenium-webdriver-3.14.1/lib/selenium/webdriver/remote/http/common.rb:62:in `call&#39;
+/Users/dcloutier/.rvm/gems/ruby-2.5.1/gems/selenium-webdriver-3.14.1/lib/selenium/webdriver/remote/bridge.rb:164:in `execute&#39;
+/Users/dcloutier/.rvm/gems/ruby-2.5.1/gems/selenium-webdriver-3.14.1/lib/selenium/webdriver/remote/oss/bridge.rb:584:in `execute&#39;
+/Users/dcloutier/.rvm/gems/ruby-2.5.1/gems/selenium-webdriver-3.14.1/lib/selenium/webdriver/remote/oss/bridge.rb:552:in `find_element_by&#39;
+/Users/dcloutier/.rvm/gems/ruby-2.5.1/gems/selenium-webdriver-3.14.1/lib/selenium/webdriver/common/search_context.rb:60:in `find_element&#39;
+/Users/dcloutier/.rvm/gems/ruby-2.5.1/gems/watir-6.14.0/lib/watir/locators/element/locator.rb:286:in `locate_element&#39;
+/Users/dcloutier/.rvm/gems/ruby-2.5.1/gems/watir-6.14.0/lib/watir/locators/element/locator.rb:76:in `using_watir&#39;
+/Users/dcloutier/.rvm/gems/ruby-2.5.1/gems/watir-6.14.0/lib/watir/locators/element/locator.rb:35:in `locate&#39;
+/Users/dcloutier/.rvm/gems/ruby-2.5.1/gems/watir-6.14.0/lib/watir/elements/element.rb:693:in `locate_in_context&#39;
+/Users/dcloutier/.rvm/gems/ruby-2.5.1/gems/watir-6.14.0/lib/watir/elements/element.rb:583:in `locate&#39;
+/Users/dcloutier/.rvm/gems/ruby-2.5.1/gems/watir-6.14.0/lib/watir/elements/element.rb:680:in `assert_exists&#39;
+/Users/dcloutier/.rvm/gems/ruby-2.5.1/gems/watir-6.14.0/lib/watir/elements/element.rb:738:in `display_check&#39;
+/Users/dcloutier/.rvm/gems/ruby-2.5.1/gems/watir-6.14.0/lib/watir/elements/element.rb:481:in `present?&#39;
+/Users/dcloutier/.rvm/gems/ruby-2.5.1/gems/watir-6.14.0/lib/watir/wait.rb:43:in `block in until&#39;
+/Users/dcloutier/.rvm/gems/ruby-2.5.1/gems/watir-6.14.0/lib/watir/wait.rb:87:in `block in run_with_timer&#39;
+/Users/dcloutier/.rvm/gems/ruby-2.5.1/gems/watir-6.14.0/lib/watir/wait/timer.rb:19:in `block in wait&#39;
+/Users/dcloutier/.rvm/gems/ruby-2.5.1/gems/watir-6.14.0/lib/watir/wait/timer.rb:18:in `loop&#39;
+/Users/dcloutier/.rvm/gems/ruby-2.5.1/gems/watir-6.14.0/lib/watir/wait/timer.rb:18:in `wait&#39;
+/Users/dcloutier/.rvm/gems/ruby-2.5.1/gems/watir-6.14.0/lib/watir/wait.rb:86:in `run_with_timer&#39;
+/Users/dcloutier/.rvm/gems/ruby-2.5.1/gems/watir-6.14.0/lib/watir/wait.rb:42:in `until&#39;
+/Users/dcloutier/.rvm/gems/ruby-2.5.1/gems/watir-6.14.0/lib/watir/wait.rb:126:in `wait_until&#39;
+./specs/spec_helper.rb:14:in `flash_and_ensure_click&#39;
+./specs/operational.rb:66:in `block (4 levels) in &lt;top (required)&gt;&#39;</pre></div>
+    <pre class="ruby"><code><span class="linenum">67</span>
+<span class="linenum">68</span>        def assert_ok
+<span class="offending"><span class="linenum">69</span>          e = error</span>
+<span class="linenum">70</span>          raise e if e
+<span class="linenum">71</span>          return unless @code.nil? || @code >= 400
+<span class="linenum">72</span><span class="comment"># Install the coderay gem to get syntax highlighting</span></code></pre>
+      </div>
+    </dd>
     <script type="text/javascript">moveProgressBar('76.4');</script>
-    <dd class="example passed"><span class="passed_spec_name">Pressing the &quot;MINUS&quot; button should add the &quot;-&quot; value to the expression field</span><span class='duration'>2.28159s</span></dd>
+    <dd class="example failed">
+      <span class="failed_spec_name">Pressing &quot;MINUS&quot; should add the &quot;-&quot; value to the expression field</span>
+      <span class="duration">0.00602s</span>
+      <div class="failure" id="failure_10">
+        <div class="message"><pre>  Failure/Error: flash_and_ensure_click(@browser.button(text: &#39;MINUS&#39;, class: &#39;operation&#39;))
+
+  Selenium::WebDriver::Error::WebDriverError:
+    chrome not reachable
+      (Session info: chrome=69.0.3497.100)
+      (Driver info: chromedriver=2.40.565386 (45a059dc425e08165f9a10324bd1380cc13ca363),platform=Mac OS X 10.13.6 x86_64)
+  # /Users/dcloutier/.rvm/gems/ruby-2.5.1/gems/selenium-webdriver-3.14.1/lib/selenium/webdriver/remote/response.rb:69:in `assert_ok&#39;
+  # /Users/dcloutier/.rvm/gems/ruby-2.5.1/gems/selenium-webdriver-3.14.1/lib/selenium/webdriver/remote/response.rb:32:in `initialize&#39;
+  # /Users/dcloutier/.rvm/gems/ruby-2.5.1/gems/selenium-webdriver-3.14.1/lib/selenium/webdriver/remote/http/common.rb:84:in `new&#39;
+  # /Users/dcloutier/.rvm/gems/ruby-2.5.1/gems/selenium-webdriver-3.14.1/lib/selenium/webdriver/remote/http/common.rb:84:in `create_response&#39;
+  # /Users/dcloutier/.rvm/gems/ruby-2.5.1/gems/selenium-webdriver-3.14.1/lib/selenium/webdriver/remote/http/default.rb:104:in `request&#39;
+  # /Users/dcloutier/.rvm/gems/ruby-2.5.1/gems/selenium-webdriver-3.14.1/lib/selenium/webdriver/remote/http/common.rb:62:in `call&#39;
+  # /Users/dcloutier/.rvm/gems/ruby-2.5.1/gems/selenium-webdriver-3.14.1/lib/selenium/webdriver/remote/bridge.rb:164:in `execute&#39;
+  # /Users/dcloutier/.rvm/gems/ruby-2.5.1/gems/selenium-webdriver-3.14.1/lib/selenium/webdriver/remote/oss/bridge.rb:584:in `execute&#39;
+  # /Users/dcloutier/.rvm/gems/ruby-2.5.1/gems/selenium-webdriver-3.14.1/lib/selenium/webdriver/remote/oss/bridge.rb:552:in `find_element_by&#39;
+  # /Users/dcloutier/.rvm/gems/ruby-2.5.1/gems/selenium-webdriver-3.14.1/lib/selenium/webdriver/common/search_context.rb:60:in `find_element&#39;
+  # /Users/dcloutier/.rvm/gems/ruby-2.5.1/gems/watir-6.14.0/lib/watir/locators/element/locator.rb:286:in `locate_element&#39;
+  # /Users/dcloutier/.rvm/gems/ruby-2.5.1/gems/watir-6.14.0/lib/watir/locators/element/locator.rb:76:in `using_watir&#39;
+  # /Users/dcloutier/.rvm/gems/ruby-2.5.1/gems/watir-6.14.0/lib/watir/locators/element/locator.rb:35:in `locate&#39;
+  # /Users/dcloutier/.rvm/gems/ruby-2.5.1/gems/watir-6.14.0/lib/watir/elements/element.rb:693:in `locate_in_context&#39;
+  # /Users/dcloutier/.rvm/gems/ruby-2.5.1/gems/watir-6.14.0/lib/watir/elements/element.rb:583:in `locate&#39;
+  # /Users/dcloutier/.rvm/gems/ruby-2.5.1/gems/watir-6.14.0/lib/watir/elements/element.rb:680:in `assert_exists&#39;
+  # /Users/dcloutier/.rvm/gems/ruby-2.5.1/gems/watir-6.14.0/lib/watir/elements/element.rb:738:in `display_check&#39;
+  # /Users/dcloutier/.rvm/gems/ruby-2.5.1/gems/watir-6.14.0/lib/watir/elements/element.rb:481:in `present?&#39;
+  # /Users/dcloutier/.rvm/gems/ruby-2.5.1/gems/watir-6.14.0/lib/watir/wait.rb:43:in `block in until&#39;
+  # /Users/dcloutier/.rvm/gems/ruby-2.5.1/gems/watir-6.14.0/lib/watir/wait.rb:87:in `block in run_with_timer&#39;
+  # /Users/dcloutier/.rvm/gems/ruby-2.5.1/gems/watir-6.14.0/lib/watir/wait/timer.rb:19:in `block in wait&#39;
+  # /Users/dcloutier/.rvm/gems/ruby-2.5.1/gems/watir-6.14.0/lib/watir/wait/timer.rb:18:in `loop&#39;
+  # /Users/dcloutier/.rvm/gems/ruby-2.5.1/gems/watir-6.14.0/lib/watir/wait/timer.rb:18:in `wait&#39;
+  # /Users/dcloutier/.rvm/gems/ruby-2.5.1/gems/watir-6.14.0/lib/watir/wait.rb:86:in `run_with_timer&#39;
+  # /Users/dcloutier/.rvm/gems/ruby-2.5.1/gems/watir-6.14.0/lib/watir/wait.rb:42:in `until&#39;
+  # /Users/dcloutier/.rvm/gems/ruby-2.5.1/gems/watir-6.14.0/lib/watir/wait.rb:126:in `wait_until&#39;
+  # ./specs/spec_helper.rb:14:in `flash_and_ensure_click&#39;
+  # ./specs/operational.rb:71:in `block (4 levels) in &lt;top (required)&gt;&#39;</pre></div>
+        <div class="backtrace"><pre>/Users/dcloutier/.rvm/gems/ruby-2.5.1/gems/selenium-webdriver-3.14.1/lib/selenium/webdriver/remote/response.rb:69:in `assert_ok&#39;
+/Users/dcloutier/.rvm/gems/ruby-2.5.1/gems/selenium-webdriver-3.14.1/lib/selenium/webdriver/remote/response.rb:32:in `initialize&#39;
+/Users/dcloutier/.rvm/gems/ruby-2.5.1/gems/selenium-webdriver-3.14.1/lib/selenium/webdriver/remote/http/common.rb:84:in `new&#39;
+/Users/dcloutier/.rvm/gems/ruby-2.5.1/gems/selenium-webdriver-3.14.1/lib/selenium/webdriver/remote/http/common.rb:84:in `create_response&#39;
+/Users/dcloutier/.rvm/gems/ruby-2.5.1/gems/selenium-webdriver-3.14.1/lib/selenium/webdriver/remote/http/default.rb:104:in `request&#39;
+/Users/dcloutier/.rvm/gems/ruby-2.5.1/gems/selenium-webdriver-3.14.1/lib/selenium/webdriver/remote/http/common.rb:62:in `call&#39;
+/Users/dcloutier/.rvm/gems/ruby-2.5.1/gems/selenium-webdriver-3.14.1/lib/selenium/webdriver/remote/bridge.rb:164:in `execute&#39;
+/Users/dcloutier/.rvm/gems/ruby-2.5.1/gems/selenium-webdriver-3.14.1/lib/selenium/webdriver/remote/oss/bridge.rb:584:in `execute&#39;
+/Users/dcloutier/.rvm/gems/ruby-2.5.1/gems/selenium-webdriver-3.14.1/lib/selenium/webdriver/remote/oss/bridge.rb:552:in `find_element_by&#39;
+/Users/dcloutier/.rvm/gems/ruby-2.5.1/gems/selenium-webdriver-3.14.1/lib/selenium/webdriver/common/search_context.rb:60:in `find_element&#39;
+/Users/dcloutier/.rvm/gems/ruby-2.5.1/gems/watir-6.14.0/lib/watir/locators/element/locator.rb:286:in `locate_element&#39;
+/Users/dcloutier/.rvm/gems/ruby-2.5.1/gems/watir-6.14.0/lib/watir/locators/element/locator.rb:76:in `using_watir&#39;
+/Users/dcloutier/.rvm/gems/ruby-2.5.1/gems/watir-6.14.0/lib/watir/locators/element/locator.rb:35:in `locate&#39;
+/Users/dcloutier/.rvm/gems/ruby-2.5.1/gems/watir-6.14.0/lib/watir/elements/element.rb:693:in `locate_in_context&#39;
+/Users/dcloutier/.rvm/gems/ruby-2.5.1/gems/watir-6.14.0/lib/watir/elements/element.rb:583:in `locate&#39;
+/Users/dcloutier/.rvm/gems/ruby-2.5.1/gems/watir-6.14.0/lib/watir/elements/element.rb:680:in `assert_exists&#39;
+/Users/dcloutier/.rvm/gems/ruby-2.5.1/gems/watir-6.14.0/lib/watir/elements/element.rb:738:in `display_check&#39;
+/Users/dcloutier/.rvm/gems/ruby-2.5.1/gems/watir-6.14.0/lib/watir/elements/element.rb:481:in `present?&#39;
+/Users/dcloutier/.rvm/gems/ruby-2.5.1/gems/watir-6.14.0/lib/watir/wait.rb:43:in `block in until&#39;
+/Users/dcloutier/.rvm/gems/ruby-2.5.1/gems/watir-6.14.0/lib/watir/wait.rb:87:in `block in run_with_timer&#39;
+/Users/dcloutier/.rvm/gems/ruby-2.5.1/gems/watir-6.14.0/lib/watir/wait/timer.rb:19:in `block in wait&#39;
+/Users/dcloutier/.rvm/gems/ruby-2.5.1/gems/watir-6.14.0/lib/watir/wait/timer.rb:18:in `loop&#39;
+/Users/dcloutier/.rvm/gems/ruby-2.5.1/gems/watir-6.14.0/lib/watir/wait/timer.rb:18:in `wait&#39;
+/Users/dcloutier/.rvm/gems/ruby-2.5.1/gems/watir-6.14.0/lib/watir/wait.rb:86:in `run_with_timer&#39;
+/Users/dcloutier/.rvm/gems/ruby-2.5.1/gems/watir-6.14.0/lib/watir/wait.rb:42:in `until&#39;
+/Users/dcloutier/.rvm/gems/ruby-2.5.1/gems/watir-6.14.0/lib/watir/wait.rb:126:in `wait_until&#39;
+./specs/spec_helper.rb:14:in `flash_and_ensure_click&#39;
+./specs/operational.rb:71:in `block (4 levels) in &lt;top (required)&gt;&#39;</pre></div>
+    <pre class="ruby"><code><span class="linenum">67</span>
+<span class="linenum">68</span>        def assert_ok
+<span class="offending"><span class="linenum">69</span>          e = error</span>
+<span class="linenum">70</span>          raise e if e
+<span class="linenum">71</span>          return unless @code.nil? || @code >= 400
+<span class="linenum">72</span><span class="comment"># Install the coderay gem to get syntax highlighting</span></code></pre>
+      </div>
+    </dd>
     <script type="text/javascript">moveProgressBar('82.3');</script>
-    <dd class="example passed"><span class="passed_spec_name">Pressing the &quot;MULT&quot; button should add the &quot;x&quot; value to the expression field</span><span class='duration'>2.27847s</span></dd>
+    <dd class="example failed">
+      <span class="failed_spec_name">Pressing &quot;MULT&quot; should add the &quot;x&quot; value to the expression field</span>
+      <span class="duration">0.00654s</span>
+      <div class="failure" id="failure_11">
+        <div class="message"><pre>  Failure/Error: flash_and_ensure_click(@browser.button(text: &#39;MULT&#39;, class: &#39;operation&#39;))
+
+  Selenium::WebDriver::Error::WebDriverError:
+    chrome not reachable
+      (Session info: chrome=69.0.3497.100)
+      (Driver info: chromedriver=2.40.565386 (45a059dc425e08165f9a10324bd1380cc13ca363),platform=Mac OS X 10.13.6 x86_64)
+  # /Users/dcloutier/.rvm/gems/ruby-2.5.1/gems/selenium-webdriver-3.14.1/lib/selenium/webdriver/remote/response.rb:69:in `assert_ok&#39;
+  # /Users/dcloutier/.rvm/gems/ruby-2.5.1/gems/selenium-webdriver-3.14.1/lib/selenium/webdriver/remote/response.rb:32:in `initialize&#39;
+  # /Users/dcloutier/.rvm/gems/ruby-2.5.1/gems/selenium-webdriver-3.14.1/lib/selenium/webdriver/remote/http/common.rb:84:in `new&#39;
+  # /Users/dcloutier/.rvm/gems/ruby-2.5.1/gems/selenium-webdriver-3.14.1/lib/selenium/webdriver/remote/http/common.rb:84:in `create_response&#39;
+  # /Users/dcloutier/.rvm/gems/ruby-2.5.1/gems/selenium-webdriver-3.14.1/lib/selenium/webdriver/remote/http/default.rb:104:in `request&#39;
+  # /Users/dcloutier/.rvm/gems/ruby-2.5.1/gems/selenium-webdriver-3.14.1/lib/selenium/webdriver/remote/http/common.rb:62:in `call&#39;
+  # /Users/dcloutier/.rvm/gems/ruby-2.5.1/gems/selenium-webdriver-3.14.1/lib/selenium/webdriver/remote/bridge.rb:164:in `execute&#39;
+  # /Users/dcloutier/.rvm/gems/ruby-2.5.1/gems/selenium-webdriver-3.14.1/lib/selenium/webdriver/remote/oss/bridge.rb:584:in `execute&#39;
+  # /Users/dcloutier/.rvm/gems/ruby-2.5.1/gems/selenium-webdriver-3.14.1/lib/selenium/webdriver/remote/oss/bridge.rb:552:in `find_element_by&#39;
+  # /Users/dcloutier/.rvm/gems/ruby-2.5.1/gems/selenium-webdriver-3.14.1/lib/selenium/webdriver/common/search_context.rb:60:in `find_element&#39;
+  # /Users/dcloutier/.rvm/gems/ruby-2.5.1/gems/watir-6.14.0/lib/watir/locators/element/locator.rb:286:in `locate_element&#39;
+  # /Users/dcloutier/.rvm/gems/ruby-2.5.1/gems/watir-6.14.0/lib/watir/locators/element/locator.rb:76:in `using_watir&#39;
+  # /Users/dcloutier/.rvm/gems/ruby-2.5.1/gems/watir-6.14.0/lib/watir/locators/element/locator.rb:35:in `locate&#39;
+  # /Users/dcloutier/.rvm/gems/ruby-2.5.1/gems/watir-6.14.0/lib/watir/elements/element.rb:693:in `locate_in_context&#39;
+  # /Users/dcloutier/.rvm/gems/ruby-2.5.1/gems/watir-6.14.0/lib/watir/elements/element.rb:583:in `locate&#39;
+  # /Users/dcloutier/.rvm/gems/ruby-2.5.1/gems/watir-6.14.0/lib/watir/elements/element.rb:680:in `assert_exists&#39;
+  # /Users/dcloutier/.rvm/gems/ruby-2.5.1/gems/watir-6.14.0/lib/watir/elements/element.rb:738:in `display_check&#39;
+  # /Users/dcloutier/.rvm/gems/ruby-2.5.1/gems/watir-6.14.0/lib/watir/elements/element.rb:481:in `present?&#39;
+  # /Users/dcloutier/.rvm/gems/ruby-2.5.1/gems/watir-6.14.0/lib/watir/wait.rb:43:in `block in until&#39;
+  # /Users/dcloutier/.rvm/gems/ruby-2.5.1/gems/watir-6.14.0/lib/watir/wait.rb:87:in `block in run_with_timer&#39;
+  # /Users/dcloutier/.rvm/gems/ruby-2.5.1/gems/watir-6.14.0/lib/watir/wait/timer.rb:19:in `block in wait&#39;
+  # /Users/dcloutier/.rvm/gems/ruby-2.5.1/gems/watir-6.14.0/lib/watir/wait/timer.rb:18:in `loop&#39;
+  # /Users/dcloutier/.rvm/gems/ruby-2.5.1/gems/watir-6.14.0/lib/watir/wait/timer.rb:18:in `wait&#39;
+  # /Users/dcloutier/.rvm/gems/ruby-2.5.1/gems/watir-6.14.0/lib/watir/wait.rb:86:in `run_with_timer&#39;
+  # /Users/dcloutier/.rvm/gems/ruby-2.5.1/gems/watir-6.14.0/lib/watir/wait.rb:42:in `until&#39;
+  # /Users/dcloutier/.rvm/gems/ruby-2.5.1/gems/watir-6.14.0/lib/watir/wait.rb:126:in `wait_until&#39;
+  # ./specs/spec_helper.rb:14:in `flash_and_ensure_click&#39;
+  # ./specs/operational.rb:75:in `block (4 levels) in &lt;top (required)&gt;&#39;</pre></div>
+        <div class="backtrace"><pre>/Users/dcloutier/.rvm/gems/ruby-2.5.1/gems/selenium-webdriver-3.14.1/lib/selenium/webdriver/remote/response.rb:69:in `assert_ok&#39;
+/Users/dcloutier/.rvm/gems/ruby-2.5.1/gems/selenium-webdriver-3.14.1/lib/selenium/webdriver/remote/response.rb:32:in `initialize&#39;
+/Users/dcloutier/.rvm/gems/ruby-2.5.1/gems/selenium-webdriver-3.14.1/lib/selenium/webdriver/remote/http/common.rb:84:in `new&#39;
+/Users/dcloutier/.rvm/gems/ruby-2.5.1/gems/selenium-webdriver-3.14.1/lib/selenium/webdriver/remote/http/common.rb:84:in `create_response&#39;
+/Users/dcloutier/.rvm/gems/ruby-2.5.1/gems/selenium-webdriver-3.14.1/lib/selenium/webdriver/remote/http/default.rb:104:in `request&#39;
+/Users/dcloutier/.rvm/gems/ruby-2.5.1/gems/selenium-webdriver-3.14.1/lib/selenium/webdriver/remote/http/common.rb:62:in `call&#39;
+/Users/dcloutier/.rvm/gems/ruby-2.5.1/gems/selenium-webdriver-3.14.1/lib/selenium/webdriver/remote/bridge.rb:164:in `execute&#39;
+/Users/dcloutier/.rvm/gems/ruby-2.5.1/gems/selenium-webdriver-3.14.1/lib/selenium/webdriver/remote/oss/bridge.rb:584:in `execute&#39;
+/Users/dcloutier/.rvm/gems/ruby-2.5.1/gems/selenium-webdriver-3.14.1/lib/selenium/webdriver/remote/oss/bridge.rb:552:in `find_element_by&#39;
+/Users/dcloutier/.rvm/gems/ruby-2.5.1/gems/selenium-webdriver-3.14.1/lib/selenium/webdriver/common/search_context.rb:60:in `find_element&#39;
+/Users/dcloutier/.rvm/gems/ruby-2.5.1/gems/watir-6.14.0/lib/watir/locators/element/locator.rb:286:in `locate_element&#39;
+/Users/dcloutier/.rvm/gems/ruby-2.5.1/gems/watir-6.14.0/lib/watir/locators/element/locator.rb:76:in `using_watir&#39;
+/Users/dcloutier/.rvm/gems/ruby-2.5.1/gems/watir-6.14.0/lib/watir/locators/element/locator.rb:35:in `locate&#39;
+/Users/dcloutier/.rvm/gems/ruby-2.5.1/gems/watir-6.14.0/lib/watir/elements/element.rb:693:in `locate_in_context&#39;
+/Users/dcloutier/.rvm/gems/ruby-2.5.1/gems/watir-6.14.0/lib/watir/elements/element.rb:583:in `locate&#39;
+/Users/dcloutier/.rvm/gems/ruby-2.5.1/gems/watir-6.14.0/lib/watir/elements/element.rb:680:in `assert_exists&#39;
+/Users/dcloutier/.rvm/gems/ruby-2.5.1/gems/watir-6.14.0/lib/watir/elements/element.rb:738:in `display_check&#39;
+/Users/dcloutier/.rvm/gems/ruby-2.5.1/gems/watir-6.14.0/lib/watir/elements/element.rb:481:in `present?&#39;
+/Users/dcloutier/.rvm/gems/ruby-2.5.1/gems/watir-6.14.0/lib/watir/wait.rb:43:in `block in until&#39;
+/Users/dcloutier/.rvm/gems/ruby-2.5.1/gems/watir-6.14.0/lib/watir/wait.rb:87:in `block in run_with_timer&#39;
+/Users/dcloutier/.rvm/gems/ruby-2.5.1/gems/watir-6.14.0/lib/watir/wait/timer.rb:19:in `block in wait&#39;
+/Users/dcloutier/.rvm/gems/ruby-2.5.1/gems/watir-6.14.0/lib/watir/wait/timer.rb:18:in `loop&#39;
+/Users/dcloutier/.rvm/gems/ruby-2.5.1/gems/watir-6.14.0/lib/watir/wait/timer.rb:18:in `wait&#39;
+/Users/dcloutier/.rvm/gems/ruby-2.5.1/gems/watir-6.14.0/lib/watir/wait.rb:86:in `run_with_timer&#39;
+/Users/dcloutier/.rvm/gems/ruby-2.5.1/gems/watir-6.14.0/lib/watir/wait.rb:42:in `until&#39;
+/Users/dcloutier/.rvm/gems/ruby-2.5.1/gems/watir-6.14.0/lib/watir/wait.rb:126:in `wait_until&#39;
+./specs/spec_helper.rb:14:in `flash_and_ensure_click&#39;
+./specs/operational.rb:75:in `block (4 levels) in &lt;top (required)&gt;&#39;</pre></div>
+    <pre class="ruby"><code><span class="linenum">67</span>
+<span class="linenum">68</span>        def assert_ok
+<span class="offending"><span class="linenum">69</span>          e = error</span>
+<span class="linenum">70</span>          raise e if e
+<span class="linenum">71</span>          return unless @code.nil? || @code >= 400
+<span class="linenum">72</span><span class="comment"># Install the coderay gem to get syntax highlighting</span></code></pre>
+      </div>
+    </dd>
     <script type="text/javascript">moveProgressBar('88.2');</script>
-    <dd class="example passed"><span class="passed_spec_name">Pressing the &quot;DIV&quot; button should add the &quot;/&quot; value to the expression field</span><span class='duration'>2.27005s</span></dd>
+    <dd class="example failed">
+      <span class="failed_spec_name">Pressing &quot;DIV&quot; should add the &quot;/&quot; value to the expression field</span>
+      <span class="duration">0.00295s</span>
+      <div class="failure" id="failure_12">
+        <div class="message"><pre>  Failure/Error: flash_and_ensure_click(@browser.button(value: &#39;/&#39;))
+
+  Selenium::WebDriver::Error::WebDriverError:
+    chrome not reachable
+      (Session info: chrome=69.0.3497.100)
+      (Driver info: chromedriver=2.40.565386 (45a059dc425e08165f9a10324bd1380cc13ca363),platform=Mac OS X 10.13.6 x86_64)
+  # /Users/dcloutier/.rvm/gems/ruby-2.5.1/gems/selenium-webdriver-3.14.1/lib/selenium/webdriver/remote/response.rb:69:in `assert_ok&#39;
+  # /Users/dcloutier/.rvm/gems/ruby-2.5.1/gems/selenium-webdriver-3.14.1/lib/selenium/webdriver/remote/response.rb:32:in `initialize&#39;
+  # /Users/dcloutier/.rvm/gems/ruby-2.5.1/gems/selenium-webdriver-3.14.1/lib/selenium/webdriver/remote/http/common.rb:84:in `new&#39;
+  # /Users/dcloutier/.rvm/gems/ruby-2.5.1/gems/selenium-webdriver-3.14.1/lib/selenium/webdriver/remote/http/common.rb:84:in `create_response&#39;
+  # /Users/dcloutier/.rvm/gems/ruby-2.5.1/gems/selenium-webdriver-3.14.1/lib/selenium/webdriver/remote/http/default.rb:104:in `request&#39;
+  # /Users/dcloutier/.rvm/gems/ruby-2.5.1/gems/selenium-webdriver-3.14.1/lib/selenium/webdriver/remote/http/common.rb:62:in `call&#39;
+  # /Users/dcloutier/.rvm/gems/ruby-2.5.1/gems/selenium-webdriver-3.14.1/lib/selenium/webdriver/remote/bridge.rb:164:in `execute&#39;
+  # /Users/dcloutier/.rvm/gems/ruby-2.5.1/gems/selenium-webdriver-3.14.1/lib/selenium/webdriver/remote/oss/bridge.rb:584:in `execute&#39;
+  # /Users/dcloutier/.rvm/gems/ruby-2.5.1/gems/selenium-webdriver-3.14.1/lib/selenium/webdriver/remote/oss/bridge.rb:552:in `find_element_by&#39;
+  # /Users/dcloutier/.rvm/gems/ruby-2.5.1/gems/selenium-webdriver-3.14.1/lib/selenium/webdriver/common/search_context.rb:60:in `find_element&#39;
+  # /Users/dcloutier/.rvm/gems/ruby-2.5.1/gems/watir-6.14.0/lib/watir/locators/element/locator.rb:286:in `locate_element&#39;
+  # /Users/dcloutier/.rvm/gems/ruby-2.5.1/gems/watir-6.14.0/lib/watir/locators/element/locator.rb:76:in `using_watir&#39;
+  # /Users/dcloutier/.rvm/gems/ruby-2.5.1/gems/watir-6.14.0/lib/watir/locators/element/locator.rb:35:in `locate&#39;
+  # /Users/dcloutier/.rvm/gems/ruby-2.5.1/gems/watir-6.14.0/lib/watir/elements/element.rb:693:in `locate_in_context&#39;
+  # /Users/dcloutier/.rvm/gems/ruby-2.5.1/gems/watir-6.14.0/lib/watir/elements/element.rb:583:in `locate&#39;
+  # /Users/dcloutier/.rvm/gems/ruby-2.5.1/gems/watir-6.14.0/lib/watir/elements/element.rb:680:in `assert_exists&#39;
+  # /Users/dcloutier/.rvm/gems/ruby-2.5.1/gems/watir-6.14.0/lib/watir/elements/element.rb:738:in `display_check&#39;
+  # /Users/dcloutier/.rvm/gems/ruby-2.5.1/gems/watir-6.14.0/lib/watir/elements/element.rb:481:in `present?&#39;
+  # /Users/dcloutier/.rvm/gems/ruby-2.5.1/gems/watir-6.14.0/lib/watir/wait.rb:43:in `block in until&#39;
+  # /Users/dcloutier/.rvm/gems/ruby-2.5.1/gems/watir-6.14.0/lib/watir/wait.rb:87:in `block in run_with_timer&#39;
+  # /Users/dcloutier/.rvm/gems/ruby-2.5.1/gems/watir-6.14.0/lib/watir/wait/timer.rb:19:in `block in wait&#39;
+  # /Users/dcloutier/.rvm/gems/ruby-2.5.1/gems/watir-6.14.0/lib/watir/wait/timer.rb:18:in `loop&#39;
+  # /Users/dcloutier/.rvm/gems/ruby-2.5.1/gems/watir-6.14.0/lib/watir/wait/timer.rb:18:in `wait&#39;
+  # /Users/dcloutier/.rvm/gems/ruby-2.5.1/gems/watir-6.14.0/lib/watir/wait.rb:86:in `run_with_timer&#39;
+  # /Users/dcloutier/.rvm/gems/ruby-2.5.1/gems/watir-6.14.0/lib/watir/wait.rb:42:in `until&#39;
+  # /Users/dcloutier/.rvm/gems/ruby-2.5.1/gems/watir-6.14.0/lib/watir/wait.rb:126:in `wait_until&#39;
+  # ./specs/spec_helper.rb:14:in `flash_and_ensure_click&#39;
+  # ./specs/operational.rb:79:in `block (4 levels) in &lt;top (required)&gt;&#39;</pre></div>
+        <div class="backtrace"><pre>/Users/dcloutier/.rvm/gems/ruby-2.5.1/gems/selenium-webdriver-3.14.1/lib/selenium/webdriver/remote/response.rb:69:in `assert_ok&#39;
+/Users/dcloutier/.rvm/gems/ruby-2.5.1/gems/selenium-webdriver-3.14.1/lib/selenium/webdriver/remote/response.rb:32:in `initialize&#39;
+/Users/dcloutier/.rvm/gems/ruby-2.5.1/gems/selenium-webdriver-3.14.1/lib/selenium/webdriver/remote/http/common.rb:84:in `new&#39;
+/Users/dcloutier/.rvm/gems/ruby-2.5.1/gems/selenium-webdriver-3.14.1/lib/selenium/webdriver/remote/http/common.rb:84:in `create_response&#39;
+/Users/dcloutier/.rvm/gems/ruby-2.5.1/gems/selenium-webdriver-3.14.1/lib/selenium/webdriver/remote/http/default.rb:104:in `request&#39;
+/Users/dcloutier/.rvm/gems/ruby-2.5.1/gems/selenium-webdriver-3.14.1/lib/selenium/webdriver/remote/http/common.rb:62:in `call&#39;
+/Users/dcloutier/.rvm/gems/ruby-2.5.1/gems/selenium-webdriver-3.14.1/lib/selenium/webdriver/remote/bridge.rb:164:in `execute&#39;
+/Users/dcloutier/.rvm/gems/ruby-2.5.1/gems/selenium-webdriver-3.14.1/lib/selenium/webdriver/remote/oss/bridge.rb:584:in `execute&#39;
+/Users/dcloutier/.rvm/gems/ruby-2.5.1/gems/selenium-webdriver-3.14.1/lib/selenium/webdriver/remote/oss/bridge.rb:552:in `find_element_by&#39;
+/Users/dcloutier/.rvm/gems/ruby-2.5.1/gems/selenium-webdriver-3.14.1/lib/selenium/webdriver/common/search_context.rb:60:in `find_element&#39;
+/Users/dcloutier/.rvm/gems/ruby-2.5.1/gems/watir-6.14.0/lib/watir/locators/element/locator.rb:286:in `locate_element&#39;
+/Users/dcloutier/.rvm/gems/ruby-2.5.1/gems/watir-6.14.0/lib/watir/locators/element/locator.rb:76:in `using_watir&#39;
+/Users/dcloutier/.rvm/gems/ruby-2.5.1/gems/watir-6.14.0/lib/watir/locators/element/locator.rb:35:in `locate&#39;
+/Users/dcloutier/.rvm/gems/ruby-2.5.1/gems/watir-6.14.0/lib/watir/elements/element.rb:693:in `locate_in_context&#39;
+/Users/dcloutier/.rvm/gems/ruby-2.5.1/gems/watir-6.14.0/lib/watir/elements/element.rb:583:in `locate&#39;
+/Users/dcloutier/.rvm/gems/ruby-2.5.1/gems/watir-6.14.0/lib/watir/elements/element.rb:680:in `assert_exists&#39;
+/Users/dcloutier/.rvm/gems/ruby-2.5.1/gems/watir-6.14.0/lib/watir/elements/element.rb:738:in `display_check&#39;
+/Users/dcloutier/.rvm/gems/ruby-2.5.1/gems/watir-6.14.0/lib/watir/elements/element.rb:481:in `present?&#39;
+/Users/dcloutier/.rvm/gems/ruby-2.5.1/gems/watir-6.14.0/lib/watir/wait.rb:43:in `block in until&#39;
+/Users/dcloutier/.rvm/gems/ruby-2.5.1/gems/watir-6.14.0/lib/watir/wait.rb:87:in `block in run_with_timer&#39;
+/Users/dcloutier/.rvm/gems/ruby-2.5.1/gems/watir-6.14.0/lib/watir/wait/timer.rb:19:in `block in wait&#39;
+/Users/dcloutier/.rvm/gems/ruby-2.5.1/gems/watir-6.14.0/lib/watir/wait/timer.rb:18:in `loop&#39;
+/Users/dcloutier/.rvm/gems/ruby-2.5.1/gems/watir-6.14.0/lib/watir/wait/timer.rb:18:in `wait&#39;
+/Users/dcloutier/.rvm/gems/ruby-2.5.1/gems/watir-6.14.0/lib/watir/wait.rb:86:in `run_with_timer&#39;
+/Users/dcloutier/.rvm/gems/ruby-2.5.1/gems/watir-6.14.0/lib/watir/wait.rb:42:in `until&#39;
+/Users/dcloutier/.rvm/gems/ruby-2.5.1/gems/watir-6.14.0/lib/watir/wait.rb:126:in `wait_until&#39;
+./specs/spec_helper.rb:14:in `flash_and_ensure_click&#39;
+./specs/operational.rb:79:in `block (4 levels) in &lt;top (required)&gt;&#39;</pre></div>
+    <pre class="ruby"><code><span class="linenum">67</span>
+<span class="linenum">68</span>        def assert_ok
+<span class="offending"><span class="linenum">69</span>          e = error</span>
+<span class="linenum">70</span>          raise e if e
+<span class="linenum">71</span>          return unless @code.nil? || @code >= 400
+<span class="linenum">72</span><span class="comment"># Install the coderay gem to get syntax highlighting</span></code></pre>
+      </div>
+    </dd>
   </dl>
 </div>
 <div id="div_group_6" class="example_group passed">
   <dl style="margin-left: 30px;">
   <dt id="example_group_6" class="passed">Assessing that DEL key is functional</dt>
+    <script type="text/javascript">makeRed('div_group_6');</script>
+    <script type="text/javascript">makeRed('example_group_6');</script>
     <script type="text/javascript">moveProgressBar('94.1');</script>
-    <dd class="example passed"><span class="passed_spec_name">Pressing the &quot;DEL&quot; button should remove the last character to the expression field</span><span class='duration'>2.29108s</span></dd>
+    <dd class="example failed">
+      <span class="failed_spec_name">Press &quot;DEL&quot; should remove the last char to the expression field</span>
+      <span class="duration">0.00295s</span>
+      <div class="failure" id="failure_13">
+        <div class="message"><pre>  Failure/Error: flash_and_ensure_click(@browser.button(value: &#39;DEL&#39;))
+
+  Selenium::WebDriver::Error::WebDriverError:
+    chrome not reachable
+      (Session info: chrome=69.0.3497.100)
+      (Driver info: chromedriver=2.40.565386 (45a059dc425e08165f9a10324bd1380cc13ca363),platform=Mac OS X 10.13.6 x86_64)
+  # /Users/dcloutier/.rvm/gems/ruby-2.5.1/gems/selenium-webdriver-3.14.1/lib/selenium/webdriver/remote/response.rb:69:in `assert_ok&#39;
+  # /Users/dcloutier/.rvm/gems/ruby-2.5.1/gems/selenium-webdriver-3.14.1/lib/selenium/webdriver/remote/response.rb:32:in `initialize&#39;
+  # /Users/dcloutier/.rvm/gems/ruby-2.5.1/gems/selenium-webdriver-3.14.1/lib/selenium/webdriver/remote/http/common.rb:84:in `new&#39;
+  # /Users/dcloutier/.rvm/gems/ruby-2.5.1/gems/selenium-webdriver-3.14.1/lib/selenium/webdriver/remote/http/common.rb:84:in `create_response&#39;
+  # /Users/dcloutier/.rvm/gems/ruby-2.5.1/gems/selenium-webdriver-3.14.1/lib/selenium/webdriver/remote/http/default.rb:104:in `request&#39;
+  # /Users/dcloutier/.rvm/gems/ruby-2.5.1/gems/selenium-webdriver-3.14.1/lib/selenium/webdriver/remote/http/common.rb:62:in `call&#39;
+  # /Users/dcloutier/.rvm/gems/ruby-2.5.1/gems/selenium-webdriver-3.14.1/lib/selenium/webdriver/remote/bridge.rb:164:in `execute&#39;
+  # /Users/dcloutier/.rvm/gems/ruby-2.5.1/gems/selenium-webdriver-3.14.1/lib/selenium/webdriver/remote/oss/bridge.rb:584:in `execute&#39;
+  # /Users/dcloutier/.rvm/gems/ruby-2.5.1/gems/selenium-webdriver-3.14.1/lib/selenium/webdriver/remote/oss/bridge.rb:552:in `find_element_by&#39;
+  # /Users/dcloutier/.rvm/gems/ruby-2.5.1/gems/selenium-webdriver-3.14.1/lib/selenium/webdriver/common/search_context.rb:60:in `find_element&#39;
+  # /Users/dcloutier/.rvm/gems/ruby-2.5.1/gems/watir-6.14.0/lib/watir/locators/element/locator.rb:286:in `locate_element&#39;
+  # /Users/dcloutier/.rvm/gems/ruby-2.5.1/gems/watir-6.14.0/lib/watir/locators/element/locator.rb:76:in `using_watir&#39;
+  # /Users/dcloutier/.rvm/gems/ruby-2.5.1/gems/watir-6.14.0/lib/watir/locators/element/locator.rb:35:in `locate&#39;
+  # /Users/dcloutier/.rvm/gems/ruby-2.5.1/gems/watir-6.14.0/lib/watir/elements/element.rb:693:in `locate_in_context&#39;
+  # /Users/dcloutier/.rvm/gems/ruby-2.5.1/gems/watir-6.14.0/lib/watir/elements/element.rb:583:in `locate&#39;
+  # /Users/dcloutier/.rvm/gems/ruby-2.5.1/gems/watir-6.14.0/lib/watir/elements/element.rb:680:in `assert_exists&#39;
+  # /Users/dcloutier/.rvm/gems/ruby-2.5.1/gems/watir-6.14.0/lib/watir/elements/element.rb:738:in `display_check&#39;
+  # /Users/dcloutier/.rvm/gems/ruby-2.5.1/gems/watir-6.14.0/lib/watir/elements/element.rb:481:in `present?&#39;
+  # /Users/dcloutier/.rvm/gems/ruby-2.5.1/gems/watir-6.14.0/lib/watir/wait.rb:43:in `block in until&#39;
+  # /Users/dcloutier/.rvm/gems/ruby-2.5.1/gems/watir-6.14.0/lib/watir/wait.rb:87:in `block in run_with_timer&#39;
+  # /Users/dcloutier/.rvm/gems/ruby-2.5.1/gems/watir-6.14.0/lib/watir/wait/timer.rb:19:in `block in wait&#39;
+  # /Users/dcloutier/.rvm/gems/ruby-2.5.1/gems/watir-6.14.0/lib/watir/wait/timer.rb:18:in `loop&#39;
+  # /Users/dcloutier/.rvm/gems/ruby-2.5.1/gems/watir-6.14.0/lib/watir/wait/timer.rb:18:in `wait&#39;
+  # /Users/dcloutier/.rvm/gems/ruby-2.5.1/gems/watir-6.14.0/lib/watir/wait.rb:86:in `run_with_timer&#39;
+  # /Users/dcloutier/.rvm/gems/ruby-2.5.1/gems/watir-6.14.0/lib/watir/wait.rb:42:in `until&#39;
+  # /Users/dcloutier/.rvm/gems/ruby-2.5.1/gems/watir-6.14.0/lib/watir/wait.rb:126:in `wait_until&#39;
+  # ./specs/spec_helper.rb:14:in `flash_and_ensure_click&#39;
+  # ./specs/operational.rb:86:in `block (4 levels) in &lt;top (required)&gt;&#39;</pre></div>
+        <div class="backtrace"><pre>/Users/dcloutier/.rvm/gems/ruby-2.5.1/gems/selenium-webdriver-3.14.1/lib/selenium/webdriver/remote/response.rb:69:in `assert_ok&#39;
+/Users/dcloutier/.rvm/gems/ruby-2.5.1/gems/selenium-webdriver-3.14.1/lib/selenium/webdriver/remote/response.rb:32:in `initialize&#39;
+/Users/dcloutier/.rvm/gems/ruby-2.5.1/gems/selenium-webdriver-3.14.1/lib/selenium/webdriver/remote/http/common.rb:84:in `new&#39;
+/Users/dcloutier/.rvm/gems/ruby-2.5.1/gems/selenium-webdriver-3.14.1/lib/selenium/webdriver/remote/http/common.rb:84:in `create_response&#39;
+/Users/dcloutier/.rvm/gems/ruby-2.5.1/gems/selenium-webdriver-3.14.1/lib/selenium/webdriver/remote/http/default.rb:104:in `request&#39;
+/Users/dcloutier/.rvm/gems/ruby-2.5.1/gems/selenium-webdriver-3.14.1/lib/selenium/webdriver/remote/http/common.rb:62:in `call&#39;
+/Users/dcloutier/.rvm/gems/ruby-2.5.1/gems/selenium-webdriver-3.14.1/lib/selenium/webdriver/remote/bridge.rb:164:in `execute&#39;
+/Users/dcloutier/.rvm/gems/ruby-2.5.1/gems/selenium-webdriver-3.14.1/lib/selenium/webdriver/remote/oss/bridge.rb:584:in `execute&#39;
+/Users/dcloutier/.rvm/gems/ruby-2.5.1/gems/selenium-webdriver-3.14.1/lib/selenium/webdriver/remote/oss/bridge.rb:552:in `find_element_by&#39;
+/Users/dcloutier/.rvm/gems/ruby-2.5.1/gems/selenium-webdriver-3.14.1/lib/selenium/webdriver/common/search_context.rb:60:in `find_element&#39;
+/Users/dcloutier/.rvm/gems/ruby-2.5.1/gems/watir-6.14.0/lib/watir/locators/element/locator.rb:286:in `locate_element&#39;
+/Users/dcloutier/.rvm/gems/ruby-2.5.1/gems/watir-6.14.0/lib/watir/locators/element/locator.rb:76:in `using_watir&#39;
+/Users/dcloutier/.rvm/gems/ruby-2.5.1/gems/watir-6.14.0/lib/watir/locators/element/locator.rb:35:in `locate&#39;
+/Users/dcloutier/.rvm/gems/ruby-2.5.1/gems/watir-6.14.0/lib/watir/elements/element.rb:693:in `locate_in_context&#39;
+/Users/dcloutier/.rvm/gems/ruby-2.5.1/gems/watir-6.14.0/lib/watir/elements/element.rb:583:in `locate&#39;
+/Users/dcloutier/.rvm/gems/ruby-2.5.1/gems/watir-6.14.0/lib/watir/elements/element.rb:680:in `assert_exists&#39;
+/Users/dcloutier/.rvm/gems/ruby-2.5.1/gems/watir-6.14.0/lib/watir/elements/element.rb:738:in `display_check&#39;
+/Users/dcloutier/.rvm/gems/ruby-2.5.1/gems/watir-6.14.0/lib/watir/elements/element.rb:481:in `present?&#39;
+/Users/dcloutier/.rvm/gems/ruby-2.5.1/gems/watir-6.14.0/lib/watir/wait.rb:43:in `block in until&#39;
+/Users/dcloutier/.rvm/gems/ruby-2.5.1/gems/watir-6.14.0/lib/watir/wait.rb:87:in `block in run_with_timer&#39;
+/Users/dcloutier/.rvm/gems/ruby-2.5.1/gems/watir-6.14.0/lib/watir/wait/timer.rb:19:in `block in wait&#39;
+/Users/dcloutier/.rvm/gems/ruby-2.5.1/gems/watir-6.14.0/lib/watir/wait/timer.rb:18:in `loop&#39;
+/Users/dcloutier/.rvm/gems/ruby-2.5.1/gems/watir-6.14.0/lib/watir/wait/timer.rb:18:in `wait&#39;
+/Users/dcloutier/.rvm/gems/ruby-2.5.1/gems/watir-6.14.0/lib/watir/wait.rb:86:in `run_with_timer&#39;
+/Users/dcloutier/.rvm/gems/ruby-2.5.1/gems/watir-6.14.0/lib/watir/wait.rb:42:in `until&#39;
+/Users/dcloutier/.rvm/gems/ruby-2.5.1/gems/watir-6.14.0/lib/watir/wait.rb:126:in `wait_until&#39;
+./specs/spec_helper.rb:14:in `flash_and_ensure_click&#39;
+./specs/operational.rb:86:in `block (4 levels) in &lt;top (required)&gt;&#39;</pre></div>
+    <pre class="ruby"><code><span class="linenum">67</span>
+<span class="linenum">68</span>        def assert_ok
+<span class="offending"><span class="linenum">69</span>          e = error</span>
+<span class="linenum">70</span>          raise e if e
+<span class="linenum">71</span>          return unless @code.nil? || @code >= 400
+<span class="linenum">72</span><span class="comment"># Install the coderay gem to get syntax highlighting</span></code></pre>
+      </div>
+    </dd>
   </dl>
 </div>
 <div id="div_group_7" class="example_group passed">
   <dl style="margin-left: 30px;">
   <dt id="example_group_7" class="passed">Assessing that EQ (=) key is functional</dt>
+    <script type="text/javascript">makeRed('div_group_7');</script>
+    <script type="text/javascript">makeRed('example_group_7');</script>
     <script type="text/javascript">moveProgressBar('100.0');</script>
-    <dd class="example passed"><span class="passed_spec_name">Pressing the &quot;EQ&quot; button should yield the value ERR to the output field</span><span class='duration'>2.30132s</span></dd>
+    <dd class="example failed">
+      <span class="failed_spec_name">Pressing &quot;EQ&quot; should yield the value ERR to the output field</span>
+      <span class="duration">0.00358s</span>
+      <div class="failure" id="failure_14">
+        <div class="message"><pre>  Failure/Error: flash_and_ensure_click(@browser.button(value: &#39;EQ&#39;))
+
+  Selenium::WebDriver::Error::WebDriverError:
+    chrome not reachable
+      (Session info: chrome=69.0.3497.100)
+      (Driver info: chromedriver=2.40.565386 (45a059dc425e08165f9a10324bd1380cc13ca363),platform=Mac OS X 10.13.6 x86_64)
+  # /Users/dcloutier/.rvm/gems/ruby-2.5.1/gems/selenium-webdriver-3.14.1/lib/selenium/webdriver/remote/response.rb:69:in `assert_ok&#39;
+  # /Users/dcloutier/.rvm/gems/ruby-2.5.1/gems/selenium-webdriver-3.14.1/lib/selenium/webdriver/remote/response.rb:32:in `initialize&#39;
+  # /Users/dcloutier/.rvm/gems/ruby-2.5.1/gems/selenium-webdriver-3.14.1/lib/selenium/webdriver/remote/http/common.rb:84:in `new&#39;
+  # /Users/dcloutier/.rvm/gems/ruby-2.5.1/gems/selenium-webdriver-3.14.1/lib/selenium/webdriver/remote/http/common.rb:84:in `create_response&#39;
+  # /Users/dcloutier/.rvm/gems/ruby-2.5.1/gems/selenium-webdriver-3.14.1/lib/selenium/webdriver/remote/http/default.rb:104:in `request&#39;
+  # /Users/dcloutier/.rvm/gems/ruby-2.5.1/gems/selenium-webdriver-3.14.1/lib/selenium/webdriver/remote/http/common.rb:62:in `call&#39;
+  # /Users/dcloutier/.rvm/gems/ruby-2.5.1/gems/selenium-webdriver-3.14.1/lib/selenium/webdriver/remote/bridge.rb:164:in `execute&#39;
+  # /Users/dcloutier/.rvm/gems/ruby-2.5.1/gems/selenium-webdriver-3.14.1/lib/selenium/webdriver/remote/oss/bridge.rb:584:in `execute&#39;
+  # /Users/dcloutier/.rvm/gems/ruby-2.5.1/gems/selenium-webdriver-3.14.1/lib/selenium/webdriver/remote/oss/bridge.rb:552:in `find_element_by&#39;
+  # /Users/dcloutier/.rvm/gems/ruby-2.5.1/gems/selenium-webdriver-3.14.1/lib/selenium/webdriver/common/search_context.rb:60:in `find_element&#39;
+  # /Users/dcloutier/.rvm/gems/ruby-2.5.1/gems/watir-6.14.0/lib/watir/locators/element/locator.rb:286:in `locate_element&#39;
+  # /Users/dcloutier/.rvm/gems/ruby-2.5.1/gems/watir-6.14.0/lib/watir/locators/element/locator.rb:76:in `using_watir&#39;
+  # /Users/dcloutier/.rvm/gems/ruby-2.5.1/gems/watir-6.14.0/lib/watir/locators/element/locator.rb:35:in `locate&#39;
+  # /Users/dcloutier/.rvm/gems/ruby-2.5.1/gems/watir-6.14.0/lib/watir/elements/element.rb:693:in `locate_in_context&#39;
+  # /Users/dcloutier/.rvm/gems/ruby-2.5.1/gems/watir-6.14.0/lib/watir/elements/element.rb:583:in `locate&#39;
+  # /Users/dcloutier/.rvm/gems/ruby-2.5.1/gems/watir-6.14.0/lib/watir/elements/element.rb:680:in `assert_exists&#39;
+  # /Users/dcloutier/.rvm/gems/ruby-2.5.1/gems/watir-6.14.0/lib/watir/elements/element.rb:738:in `display_check&#39;
+  # /Users/dcloutier/.rvm/gems/ruby-2.5.1/gems/watir-6.14.0/lib/watir/elements/element.rb:481:in `present?&#39;
+  # /Users/dcloutier/.rvm/gems/ruby-2.5.1/gems/watir-6.14.0/lib/watir/wait.rb:43:in `block in until&#39;
+  # /Users/dcloutier/.rvm/gems/ruby-2.5.1/gems/watir-6.14.0/lib/watir/wait.rb:87:in `block in run_with_timer&#39;
+  # /Users/dcloutier/.rvm/gems/ruby-2.5.1/gems/watir-6.14.0/lib/watir/wait/timer.rb:19:in `block in wait&#39;
+  # /Users/dcloutier/.rvm/gems/ruby-2.5.1/gems/watir-6.14.0/lib/watir/wait/timer.rb:18:in `loop&#39;
+  # /Users/dcloutier/.rvm/gems/ruby-2.5.1/gems/watir-6.14.0/lib/watir/wait/timer.rb:18:in `wait&#39;
+  # /Users/dcloutier/.rvm/gems/ruby-2.5.1/gems/watir-6.14.0/lib/watir/wait.rb:86:in `run_with_timer&#39;
+  # /Users/dcloutier/.rvm/gems/ruby-2.5.1/gems/watir-6.14.0/lib/watir/wait.rb:42:in `until&#39;
+  # /Users/dcloutier/.rvm/gems/ruby-2.5.1/gems/watir-6.14.0/lib/watir/wait.rb:126:in `wait_until&#39;
+  # ./specs/spec_helper.rb:14:in `flash_and_ensure_click&#39;
+  # ./specs/operational.rb:92:in `block (4 levels) in &lt;top (required)&gt;&#39;</pre></div>
+        <div class="backtrace"><pre>/Users/dcloutier/.rvm/gems/ruby-2.5.1/gems/selenium-webdriver-3.14.1/lib/selenium/webdriver/remote/response.rb:69:in `assert_ok&#39;
+/Users/dcloutier/.rvm/gems/ruby-2.5.1/gems/selenium-webdriver-3.14.1/lib/selenium/webdriver/remote/response.rb:32:in `initialize&#39;
+/Users/dcloutier/.rvm/gems/ruby-2.5.1/gems/selenium-webdriver-3.14.1/lib/selenium/webdriver/remote/http/common.rb:84:in `new&#39;
+/Users/dcloutier/.rvm/gems/ruby-2.5.1/gems/selenium-webdriver-3.14.1/lib/selenium/webdriver/remote/http/common.rb:84:in `create_response&#39;
+/Users/dcloutier/.rvm/gems/ruby-2.5.1/gems/selenium-webdriver-3.14.1/lib/selenium/webdriver/remote/http/default.rb:104:in `request&#39;
+/Users/dcloutier/.rvm/gems/ruby-2.5.1/gems/selenium-webdriver-3.14.1/lib/selenium/webdriver/remote/http/common.rb:62:in `call&#39;
+/Users/dcloutier/.rvm/gems/ruby-2.5.1/gems/selenium-webdriver-3.14.1/lib/selenium/webdriver/remote/bridge.rb:164:in `execute&#39;
+/Users/dcloutier/.rvm/gems/ruby-2.5.1/gems/selenium-webdriver-3.14.1/lib/selenium/webdriver/remote/oss/bridge.rb:584:in `execute&#39;
+/Users/dcloutier/.rvm/gems/ruby-2.5.1/gems/selenium-webdriver-3.14.1/lib/selenium/webdriver/remote/oss/bridge.rb:552:in `find_element_by&#39;
+/Users/dcloutier/.rvm/gems/ruby-2.5.1/gems/selenium-webdriver-3.14.1/lib/selenium/webdriver/common/search_context.rb:60:in `find_element&#39;
+/Users/dcloutier/.rvm/gems/ruby-2.5.1/gems/watir-6.14.0/lib/watir/locators/element/locator.rb:286:in `locate_element&#39;
+/Users/dcloutier/.rvm/gems/ruby-2.5.1/gems/watir-6.14.0/lib/watir/locators/element/locator.rb:76:in `using_watir&#39;
+/Users/dcloutier/.rvm/gems/ruby-2.5.1/gems/watir-6.14.0/lib/watir/locators/element/locator.rb:35:in `locate&#39;
+/Users/dcloutier/.rvm/gems/ruby-2.5.1/gems/watir-6.14.0/lib/watir/elements/element.rb:693:in `locate_in_context&#39;
+/Users/dcloutier/.rvm/gems/ruby-2.5.1/gems/watir-6.14.0/lib/watir/elements/element.rb:583:in `locate&#39;
+/Users/dcloutier/.rvm/gems/ruby-2.5.1/gems/watir-6.14.0/lib/watir/elements/element.rb:680:in `assert_exists&#39;
+/Users/dcloutier/.rvm/gems/ruby-2.5.1/gems/watir-6.14.0/lib/watir/elements/element.rb:738:in `display_check&#39;
+/Users/dcloutier/.rvm/gems/ruby-2.5.1/gems/watir-6.14.0/lib/watir/elements/element.rb:481:in `present?&#39;
+/Users/dcloutier/.rvm/gems/ruby-2.5.1/gems/watir-6.14.0/lib/watir/wait.rb:43:in `block in until&#39;
+/Users/dcloutier/.rvm/gems/ruby-2.5.1/gems/watir-6.14.0/lib/watir/wait.rb:87:in `block in run_with_timer&#39;
+/Users/dcloutier/.rvm/gems/ruby-2.5.1/gems/watir-6.14.0/lib/watir/wait/timer.rb:19:in `block in wait&#39;
+/Users/dcloutier/.rvm/gems/ruby-2.5.1/gems/watir-6.14.0/lib/watir/wait/timer.rb:18:in `loop&#39;
+/Users/dcloutier/.rvm/gems/ruby-2.5.1/gems/watir-6.14.0/lib/watir/wait/timer.rb:18:in `wait&#39;
+/Users/dcloutier/.rvm/gems/ruby-2.5.1/gems/watir-6.14.0/lib/watir/wait.rb:86:in `run_with_timer&#39;
+/Users/dcloutier/.rvm/gems/ruby-2.5.1/gems/watir-6.14.0/lib/watir/wait.rb:42:in `until&#39;
+/Users/dcloutier/.rvm/gems/ruby-2.5.1/gems/watir-6.14.0/lib/watir/wait.rb:126:in `wait_until&#39;
+./specs/spec_helper.rb:14:in `flash_and_ensure_click&#39;
+./specs/operational.rb:92:in `block (4 levels) in &lt;top (required)&gt;&#39;</pre></div>
+    <pre class="ruby"><code><span class="linenum">67</span>
+<span class="linenum">68</span>        def assert_ok
+<span class="offending"><span class="linenum">69</span>          e = error</span>
+<span class="linenum">70</span>          raise e if e
+<span class="linenum">71</span>          return unless @code.nil? || @code >= 400
+<span class="linenum">72</span><span class="comment"># Install the coderay gem to get syntax highlighting</span></code></pre>
+      </div>
+    </dd>
   </dl>
 </div>
-<script type="text/javascript">document.getElementById('duration').innerHTML = "Finished in <strong>38.92437 seconds</strong>";</script>
-<script type="text/javascript">document.getElementById('totals').innerHTML = "17 examples, 0 failures";</script>
+<script type="text/javascript">document.getElementById('duration').innerHTML = "Finished in <strong>8.29140 seconds</strong>";</script>
+<script type="text/javascript">document.getElementById('totals').innerHTML = "17 examples, 14 failures";</script>
 </div>
 </div>
 </body>

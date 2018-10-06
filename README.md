@@ -18,4 +18,4 @@
 
 #* Execution
 * _run_ ruby main.rb
-* follow the instructions on-screen
+* follow the instructions on-screen, should the preference file be invalid

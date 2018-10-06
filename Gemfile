@@ -16,3 +16,7 @@ gem 'syntax', '1.2.2'
 
 # Lint
 gem 'rubocop', '0.59.2'
+
+
+# YML parser
+gem 'psych', '2.2.4'
