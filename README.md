@@ -6,14 +6,10 @@
 * Chromedriver (for chrome)
   * versions needs to match your Chrome Browser version
   * make sure to add it yo your system PATH
-* Geckodriver (for firefox)
-  * versions needs to match your Firefox Browser version
-  * make sure to add it yo your system PATH
   
 #* Installation
 * _cd_ into lmi-calculator-integration-tests
 * _run_ bundle install
-
 
 
 #* Execution
