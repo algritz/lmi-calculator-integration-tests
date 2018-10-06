@@ -42,5 +42,23 @@ describe 'Integration Tests' do
         expect(@browser.div(id: 'output').text.include? '-4').to be true
       end
     end
+    describe 'validating the addition of 1 postive number and negative number' do
+      it 'Adding 2 + -2 should yield 0' do
+        flash_and_ensure_click(@browser.button(value: '2'))
+        flash_and_ensure_click(@browser.button(text: 'PLUS', class: 'operation'))
+        flash_and_ensure_click(@browser.button(text: 'MINUS', class: 'operation'))
+        flash_and_ensure_click(@browser.button(value: '2'))
+        flash_and_ensure_click(@browser.button(value: 'EQ'))
+        expect(@browser.div(id: 'output').text.include? '0').to be true
+      end
+      it 'Adding -2 + 2 should yield 0' do
+        flash_and_ensure_click(@browser.button(text: 'MINUS', class: 'operation'))
+        flash_and_ensure_click(@browser.button(value: '2'))
+        flash_and_ensure_click(@browser.button(text: 'PLUS', class: 'operation'))
+        flash_and_ensure_click(@browser.button(value: '2'))
+        flash_and_ensure_click(@browser.button(value: 'EQ'))
+        expect(@browser.div(id: 'output').text.include? '0').to be true
+      end
+    end
   end
 end
