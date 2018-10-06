@@ -1,4 +1,6 @@
-#over the years I've come to see that browsers would sometime:
+# frozen_string_literal: true
+
+# over the years I've come to see that browsers would sometime:
 # - try to click on things before they were rendered, or active (&:present?)
 #
 #  The flash is there to help the QA / Developer follow along with the test flow,
@@ -14,7 +16,6 @@ def flash_and_ensure_click(dom_element)
   dom_element.click
 end
 
-
 # Same as the flash_and_ensure_click, but with a scroll to element backed in
 # - clicks on elements that are outside of the screen's viewport (scroll) tend to fail
 # This methof is meant to prevent that
@@ -25,17 +26,16 @@ def flash_scroll_and_ensure_click(dom_element)
   dom_element.click
 end
 
-
 # this function was a "try" to clear the 'equation' field between each tests,
 # unfortunately, Watir sees the equation field "empty" after the first "press"
 # of the DEL button, which yields invalid scenarios afterwards.
 # You can uncomment the call to this function in file functional.rb
 # and see for yourself
 def empty_equation_field(equation_dom_element, del_dom_element)
-  unless equation_dom_element.text.empty?
+  if equation_dom_element.text.empty?
+    puts equation_dom_element.text
+  else
     flash_and_ensure_click(del_dom_element)
     empty_equation_field(equation_dom_element, del_dom_element)
-  else
-    puts equation_dom_element.text
   end
 end
